@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>FoodRep</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+      </head>
+    <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
+        <div class="container-fluid fs-5 nav-text">
+            <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
+            <a class="navbar-brand me-auto" href="#">
+                <span class="food">Food</span>
+                <span class="rep">Rep</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-start text-center"> <!-- Center the links -->
+                    <li class="nav-item ps-4 pt-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
+                        <a class="nav-link dropdown-toggler" id="active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All Recipes</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ps-4 pt-2">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ps-4 pt-2 pe-5">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-start me-5"> <!-- Move the navigation icon to the right end -->
+                    <li class="nav-item">
+                        <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
+                            <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
+                            <span class="fs-6 fa-icon" id="favorite-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+       <!--firs row-->
+
+       <div class="container-xxl py-5 mt-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 hover-opacity">
+              <div class="row g-3  custom-img">
+                  <div class="col-6 text-start">
+                      <img class="img-fluid rounded w-100 shadow-effect" src="img/champorado.png" alt="image" >
+                  </div>
+                  <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 25%;" src="img/breakfast1.png" alt="image">
+                  </div>
+                  <div class="col-6 text-end">
+                    <img class="img-fluid rounded w-75 shadow-effect"  src="img/omelette.png" alt="image">
+                  </div>
+                  <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-100 shadow-effect" src="img/toast.png" alt="image" >
+                </div>  
+              </div>
+            </div>
+            <!--Images-end-->
+            <div class="col-lg-6 bg-white p-3 rounded custom-shadow">
+              <!--About-section-->
+              <h1 class="mb-4">Welcome to
+                <img class="logo-image" src="img/projectlogo.svg" height="80" width="100" alt="logo">
+              <span class="text-orange">Food</span>
+              <span class="text-black">Rep</span>
+          </h1> 
+          <p class="mb-4 fs-2" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">
+            Authentic Filipino <span style="color: #FF7f50;">breakfast</span> flavors
+          </p> 
+            <a href="breakfast.html" class="btn draw-border py-3 px-5 mt-2">breakfast recipes</a>
+          </div>
+          </div>
+        </div>          
+      </div>
+
+      
+    <div class="container mt-5">
+      <div id="recipe-list" class="row">
+        <div class="col-md-3 card-rep">
+          <div class="card">
+            <img src="img/lunch2.png" class="card-img-top" alt="Recipe 1" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pork Tocino', 'img/lunch2.png', ['500g/ 1 lb of Chicken Meat', '20 slices white sandwich bread', 'Sour cream', 'Walnuts Best substitute – cashews, macadamia nuts or pecans. Else, leave it out.', 'Fresh dill', 'Pickles', '1 Celery and 1 green onion ', 'garlic, salt, pepper', 'Lemon juice ', 'Dijon mustard'], 
+            ['Remove flesh off the chicken and remove the skin.', 
+            'Shred the chicken as finely as you can. It takes about 1 minute on medium speed using a stand-mixer using the paddle attachment (not whisk, it gets all caught up in the wires). A hand-held beater will also work but will take a bit longer. Else, use your hands.',
+             'Mix sauce ingredients in a bowl until smooth. Use a whisk, if needed.',
+             'Pour sauce over the chicken with remaining Filling ingredients (walnuts, celery, green onion, pickle, dill) and mix until combined. At this stage, you should sneak in a taste test and marvel at how soft and creamy the chicken sandwich filling is!',
+             'Butter the bread. This not only provides extra flavour but a protection barrier so the sauce of the chicken filling doesn’t soak into the bread.',
+             'Spread the filling on the bread, from edge to edge.',
+             'Cut off crusts – I typically don’t cut the crust off sandwiches but for chicken sandwiches, I do if I’m making them for other people. Partly so they look neat – think High-Tea finger sandwich style – and also because then you get the full effect of the soft creamy chicken filling with just soft white bread. No tough crust getting in the way of the eating experience!',
+             'Cut in half on the diagonal, or into rectangles, then line them upon a platter!',])">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Sandwiches</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 20 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="1">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-1">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="d-flex justify-content-center add-favorite" id="liveAlertPlaceholder">
+                <button class="btn btn-outline-danger p-2" id="liveAlertBtn">
+                  <i class="fa fa-heart" onclick="showToast(successMsg)"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>  
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/dinner.png" class="card-img-top" alt="Recipe 2" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Chicken Curry with coconut milk', 'img/dinner.png', ['2-3 tablespoons vegetable oil', '1 medium potato - cut into wedges', '1 medium carrot - cut into wedges', '3 cloves garlic - minced', '1 small onion - chopped', '2 pounds chicken', '2 tablespoons fish sauce', '2 tablespoons curry powder', '1 tablespoon paprika powder (optional)', '½ teaspoon ground black pepper', '1 can (400mL) coconut milk (2 tablespoon powder dissolved in water)', '1 medium green bell pepper - cut into squares', '1 piece fresh chili pepper cut into 4-5 pieces (or dried chili flakes)'], 
+            ['Fry potato and carrots in oil until cooked and edges are lightly browned. Once done, remove from oil and then set aside.',
+              'Saute garlic and onion in the remaining oil over medium heat. Add chicken meat and sear each both sides for a minute. ',
+              'Add the fish sauce, curry powder, paprika powder, and ground pepper. Cover and simmer for 5 minutes.',
+              'Turn heat to low then add coconut milk, and let it simmer until sauce thickens and chicken is fully cooked. I like it really thick so I cook it a little longer.',
+              'Add the carrots, potatoes and bell pepper and chili and cook for another minute.',
+              'Transfer to a serving dish and serve with rice or your favorite side.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Chicken Curry</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 50 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="2">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-2">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/breakfast1.png" class="card-img-top" alt="Recipe 3" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('American Pancake', 'img/breakfast1.png', ['1 ¼ cups all-purpose flour', '1 tablespoon baking powder', '1 ¼ teaspoons white sugar', '½ teaspoon salt', '1 cup milk', 'i egg', '½ tablespoon butter, melted', '½ cup frozen blueberries, thawed'], 
+            ['Sift flour, baking powder, sugar, and salt together in a large bowl. Combine milk and egg in a small bowl. Stir egg mixture into flour mixture until just combined. Stir in melted butter, then fold in blueberries. Set aside for 1 hour.',
+              'Heat a lightly oiled griddle or nonstick frying pan over medium-high heat.',
+              'Pour or scoop the batter onto the hot griddle, using approximately 1/4 cup for each pancake; cook until bubbles appear on the surface, then flip and cook until golden brown on both sides. Serve hot.'
+              ])">
+            <div class="card-body">
+              <h5 class="card-title">American Pancake</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 20 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="3">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-3">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/adobo.png" class="card-img-top" alt="Recipe 4" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Filipino Chicken Adobo', 'img/adobo.png', ['3/4 cup rice vinegar ', '3/4 cup light or low-sodium soy sauce', '1 teaspoon black peppercorns', '2 1/2 pounds boneless skinless chicken thighs', '2 tablespoons neutral oil, such as avocado oil, divided', '1 medium yellow onion, thinly sliced', '5 cloves garlic, thinly sliced or minced', '3 bay leaves (preferably fresh)', '2 teaspoons cane, brown, or white sugar (*omit if using Filipino cane vinegar)', '4 green onions, thinly sliced', 'white rice for serving'], 
+            ['In a large bowl, combine the vinegar, soy sauce, and peppercorns. Add the chicken thighs and marinate for at least 20 minutes, or up to overnight.',
+              'Heat 1 tablespoon oil over high heat in a large skillet or pot. Remove chicken from the marinade allowing most of the marinade to drip back into the bowl (reserve the marinade). Place the chicken, smooth side down, in the hot pan. Cook undisturbed for 2 to 3 minutes, or until just a bit brown and golden. Flip and cook for only 2 more minutes—do not cook through. Transfer chicken to a large plate.',
+              'Reduce heat to medium-low and add the remaining 1 tablespoon oil to the skillet. Add the onions and garlic and cook until garlic is fragrant and slightly brown, about 2 minutes. (The onions do not need to be brown).',
+              'Add the reserved marinade, bay leaves and sugar and bring to a rolling boil, scraping up any browned bits that may have stuck to the bottom of the pan. Once boiling, lower the heat to medium and simmer for 3-4 minutes.',
+              'Nestle in the chicken thighs, smooth side down. Lower heat to a simmer, and cook, uncovered, for 10 minutes. Flip the chicken thighs and continue to simmer, occasionally spooning sauce over the top of the thighs, for 10 to 15 minutes, or until sauce has reduced by at least half.',
+              'At this point, if the sauce doesn\'t seem thick enough, remove the chicken to a plate and continue to cook the sauce until it reduces to your desired consistency. I like it a bit glaze-y but not so thick that I lose too much sauce. Return chicken back to the skillet to warm slightly, if necessary.',
+              'Serve immediately with fluffy white rice, passing around extra adobo sauce at the table.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Filipino Chicken Adobo</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 40 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="4">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-4">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!--first row end-->
+
+      <div class="container" style="border-radius: 8px; padding: 2rem;">
+        <div class="row g-3">
+          <p class="text-center fs-3" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">Eat a Healthy <span style="color: #FF7f50;" class="fs-1">Lunch</span> Every Day</p>
+          <div class="col-lg-6 hover-opacity">
+            <div class="row g-3  custom-img">
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-100 shadow-effect" src="img/champorado.png" alt="image" >
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 25%;" src="img/breakfast1.png" alt="image">
+                </div>
+                <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-75 shadow-effect"  src="img/omelette.png" alt="image">
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 shadow-effect" src="img/toast.png" alt="image" >
+              </div>  
+            </div>
+          </div>
+          <div class="col-lg-6 hover-opacity ">
+            <div class="row g-3  custom-img">
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-left: 25%; margin-top: 25%;" src="img/champorado.png" alt="image" >
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 shadow-effect" src="img/breakfast1.png" alt="image">
+                </div>
+                <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-100 shadow-effect"  src="img/omelette.png" alt="image">
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
+                  <a href="breakfast.html" class="btn draw-border mt-3 w-75">Lunch</a> 
+                  
+              </div> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="recipe-list" class="row"> <!--second row-->
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/pork.png" class="card-img-top" alt="Recipe 5" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pork Tocino', 'img/pork.png', ['2 pounds pork butt, sliced to ¼-inch thick', '1 cup sugar', '1 tablespoon salt', '1 tablespoon garlic powder', '¼ teaspoon pepper', '2 drops red food coloring', '1 cup water', '2 tablespoons canola oil'], 
+            ['In a bowl, combine pork, sugar, salt, garlic, pepper, and red food coloring. Massage meat with curing mixture until well-distributed and evenly colored.',
+            'Store in a covered container or ziplock bag and refrigerate overnight to cure.',
+            'In a pan over medium heat, add pork including marinade and enough water to cover. Bring to a boil.',
+            'Lower heat, cover and simmer until meat is tender and cooked through, adding more water in ½ cup increments as needed. ',
+            'When water is completely absorbed and meat is tender, add oil and cook, stirring regularly, until meat caramelizes. Serve hot.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Pork Tocino</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 30 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="5">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-5">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/rice.png" class="card-img-top" alt="Recipe 6" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Bacon Fried Rice', 'img/rice.png', ['6 slices thick-cut bacon, chopped', '1⁄2 large onion, diced', '2 cloves garlic, minced', '1 cup frozen peas and carrots', '4 cups cooked and cooled long-grain rice (preferably day-old)', '3 large eggs, beaten', '2 tablespoons soy sauce', '1 tablespoon oyster sauce', '1 teaspoon sesame oil', 'Salt and pepper to taste', '2 green onions, chopped'], 
+            ['Add the chopped bacon to a large, cold skillet. Turn the heat to medium and cook until crispy. Remove from the pan to a paper towel-lined plate. Set aside.',
+            'In the same skillet, add the diced onion and cook until translucent in the bacon grease, about 3-5 minutes.',
+            'Add the minced garlic and frozen peas and carrots. Sauté for 2-3 minutes until vegetables are tender. Then, add the cold rice and cook for 2-4 minutes, stirring well.',
+            'Push the rice and vegetables to one side of the pan. Add the whisked eggs to the empty side and scramble until cooked through. Mix the eggs into the vegetables.',
+            'Increase the heat to high. Add the soy sauce, oyster sauce, sesame oil, and chopped cooked bacon. Mix well to combine all ingredients, and add salt and pepper to taste.',
+            'Cook for 1-2 more minutes, then serve hot with chopped green onions for garnish. Enjoy!'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Bacon Fried Rice</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 35 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="6">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-6">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/salmon.png" class="card-img-top" alt="Recipe 7" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pan-Seared Salmon', 'img/salmon.png', ['1 ½ pound whole salmon fillet, skin on, center-cut if possible', 'kosher salt, as needed for seasoning', 'black pepper, as needed for seasoning', '2 tablespoons olive oil, light olive oil, grapeseed, avocado oil, or vegetable oil', '1 tablespoon minced garlic', '1 teaspoon lemon zest', '¼ cup lemon juice', '½ teaspoon kosher salt', '¼ teaspoon black pepper', '3 tablespoons unsalted butter', '1 tablespoon dill leaves, roughly chopped', '1 tablespoon minced parsley', '4 lemon wedges'],
+             ['Use the top of a knife (the spine) to remove the scales from the fillet if still intact. Run the knife a 45-degree angle against the skin to pop the scales off and discard.',
+            'Cut the salmon into 4 even-sized fillets, about 2-inch wide, and 6 ounces in weight, if not already portioned.',
+            'Thoroughly dry both sides of the salmon and skin with paper towels.',
+            'Right before cooking, season both sides of the salmon with salt and pepper.',
+            'Heat a 12-inch stainless steel, cast iron, or nonstick pan over medium heat until hot, about 2 minutes. Add the olive oil, then turn the heat to medium-high. Once the oil begins to shimmer, about 1 to 2 minutes, carefully add the salmon, skin-side down, one at a time. Using the back of a spatula, immediately press the fish down into the pan for about 10 seconds. This will help reduce the buckling of the skin. Add the remaining fillets to the pan, pressing each one down before adding the next piece. Reduce the heat to medium. Cook the salmon, occasionally pressing down on the flesh, until the skin is brown and crispy, and easily releases from the pan, about 5 to 6 minutes. The salmon will be about 75 to 80% cooked through.',
+            'Use tongs to carefully flip the salmon over. Gently press the surface to make direct contact with the pan, do not move the fillets. Cook until the surface is golden brown, the edges are opaque, and the center is slightly translucent, about 1 to 2 minutes. The internal temperature should read 120°F (49°C) for medium-rare, or 130°F (54°C) for medium.',
+            'Transfer the salmon to a paper towel-lined plate to drain the excess grease. Do not discard the pan.'
+             ])">
+            <div class="card-body">
+              <h5 class="card-title">Pan-Seared Salmon</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 15 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="7">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-7">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/pasta.png" class="card-img-top" alt="Recipe 8" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Beef Pasta in Tomato Sauce', 'img/pasta.png', ['8 ounces of pasta', '1 tablespoon olive oil', '1 pound of lean ground beef', '1/2 sweet onion, chopped', '2 cloves garlic, minced', '1 1/2 teaspoons Italian seasoning', '1 tablespoon instant bouillon cube (chicken or beef)', '1 (15-ounce) can marinara tomato sauce', '1/2 teaspoon Kosher salt and freshly ground black pepper, to taste', '1 cup shredded  parmesan cheese', '1 tablespoon fresh chopped parsley'], 
+            ['To make the beef pasta: In a large pot of boiling salted water, cook the pasta according to package instructions; drain well and set aside.',
+            'Heat olive oil in a large skillet over medium-high heat. Add chopped onion to the skillet, and cook, stirring frequently, until the onion is translucent about 2-3 minutes. Stir in garlic, bouillon, and Italian seasoning, and cook until fragrant, about 1 minute.',
+            'Add ground beef and cook until the meat is browned and no longer pink, about 5 minutes. Crumble the beef as it cooks and drain any excess fat.',
+            'Stir in marinara sauce. Bring to a simmer, stirring occasionally, for about 8 minutes.',
+            'Adjust seasoning with salt and pepper, to taste. Stir the cooked pasta into the sauce.',
+            'Stir in chopped parsley and grated parmesan until melted, about 2-3 minutes. Serve the beef pasta immediately. Enjoy!'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Beef Pasta in Tomato Sauce</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 1hr and 15 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="8">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-8">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><!--second row end-->
+      </div> 
+
+
+
+      <div class="container" style="border-radius: 8px; padding: 2rem;">
+        <div class="row g-3 text-center">
+          <div class="col-lg-6 hover-opacity">
+            <p class="text-center mt-4 fs-3 w-100" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">Always Choose <span style="color: #FF7f50;" class="fs-1">Dinner</span> Time With Your Favorite Recipes</p>
+
+            <div class="row d-flex justify-content-center custom-img">
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 shadow-effect" style="margin-top: 25%; margin-left: 15%;" src="img/breakfast1.png" alt="image"> 
+                  </div>
+                  <div class="col-6 text-center">
+                    <div class="row">
+                      <div class="col text-start text-center">
+                        <img class="img-fluid rounded w-75 shadow-effect" style="margin-bottom: 6%;" src="img/toast.png" alt="image" >
+                        <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
+                    </div>  
+    
+                    </div>
+                  </div>
+                  
+                
+                
+            </div>
+          </div>
+          <div class="col-lg-6 hover-opacity ">
+            <div class="row g-3  custom-img">
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-left: 25%; margin-top: 25%;" src="img/champorado.png" alt="image" >
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 shadow-effect" src="img/breakfast1.png" alt="image">
+                </div>
+                <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-100 shadow-effect"  src="img/omelette.png" alt="image">
+                </div>
+                <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
+                  <a href="dinner.html" class="btn draw-border mt-3 w-75">Dinner</a> 
+                  
+              </div> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="recipe-list" class="row"> <!--third row-->
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/omelette.png" class="card-img-top" alt="Recipe 9" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Masala omelette', 'img/omelette.png', ['2 eggs', '¼ cup onion ', '¼ cup tomato', '½ fresh green chili eg serano, or more to taste', '1 tablespoon cilantro coriander (chopped volume)', '⅛ teaspoon turmeric', '⅛ teaspoon chili powder', '1 tablespoon vegetable oil or other neutral oil'], 
+            ['Lightly whisk the eggs in a bowl - they should be broken up but not frothy.',
+            'Finely chop the onion, tomato, chili and cilantro. Add them to the eggs, along with the turmeric and chili and stir to combine. Add a pinch of salt to taste, if you like.',
+            'Gently warm the oil in a small-medium skillet/frying pan over a medium heat (see notes) and add the egg mixture while it\'s still warming up.',
+            'Cook the omelette on the first side for around 2-4 minutes until it is cooked on the sides and largely cooked in the middle. Cover the top of the omelette with a small plate and flip it on to the plate and back into the skillet to turn. Cook on the other side for a minute or two to be gently brown and cooked through. Serve as it is or with roti/bread.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Masala omelette</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 10 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="9">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-9">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/champorado.png" class="card-img-top" alt="Recipe 10" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Champorado', 'img/champorado.png', ['½ cup cocoa powder', '4 cups water', '1 cup glutinous/sticky rice', '½ cup sugar - add more if needed', '12 fluid ounces (1can) evaporated milk'],
+            ['In a pot over high heat, bring 3 cups of water to boil. Add the glutinous rice and let it cook for 5 minutes, stirring from time to time.',
+            'Dissolve cocoa powder in 1 cup warm water. Make sure all lumps are gone. Pour cocoa mixture into the pot of rice and continue cooking until it gets thicker. Turn heat to medium-low. Add the sugar and stir occasionally to prevent rice from sticking at the bottom of the pot. Add more water if it gets too thick and the rice is not yet done.',
+            'Remove from heat once the glutinous rice is done and the desired consistency is achieved. Note, however, that the glutinous rice will continue to expand and absorb the liquid even after cooking.',
+            'Serve Champorado in a bowl and add some evaporated milk on top.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Champorado</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 15 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="10">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-10">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/onigiri.png" class="card-img-top" alt="Recipe 11" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Onigiri AKA Japanese Rice Balls', 'img/onigiri.png', ['2 cups short grain Japanese japonica rice', '3 cups water', '1/3 cup rice vinegar', '3 tablespoons sugar', '1 teaspoon salt', '8 sheets roasted seaweed nori or [onigiri wrappers] (optional)', 'One or more fillings enough to fill 8 balls, which is about ½ to 3/4 cup'], 
+            ['Rinse the rice in cold water at least 5 times and drain well in a fine-mesh sieve. If using a rice cooker, simply add the rice and cold water to the rice cooker and cook according to the cooker’s instructions. To cook the rice in a pot on the stovetop, place the rice in a pot with a tight-fitting lid. Add the cold water and bring to a boil. Reduce heat to a very low simmer, cover the pot, and simmer for about 20 minutes, until all of the liquid is absorbed and the rice is tender.',
+            'If using the sushi rice seasoning, while the rice is cooking, combine the vinegar, sugar, and salt in a small saucepan and heat over medium heat, stirring, just until the sugar is dissolved. When the rice is finished cooking, stir the vinegar mixture into it until well combined.',
+            'Transfer the rice from the rice cooker or cooking pot to a large bowl and let cool until it is cool enough to handle.',
+            'Shape your onigiri while the rice is still warm. If using a mold, wet the inside of the mold and, using wet hands, fill it about halfway with rice. Make an indentation in the middle of the rice with your thumb and add your filling, about a tablespoon or so. Add more rice on top to fill the mold. Place the top half of the mold on top and press down gently. Remove the top of the mold and invert the bottom half over a plate. Press down on the button in the middle to help the onigiri slide out. Wet the inside of the mold again and repeat the process until you have used up all of your rice and filling or have made the desired number of onigiri.',
+            'If shaping the onigiri by hand, use wet hands and shape into a ball, make an indentation in the middle, fill with about 1 tablespoon of filling, and close up the hole with a bit more rice. Leave it in a ball shape, or use your hands to form it into a triangular shape, if desired.',
+            'If using individually-wrapped onigiri wrappers, leave the plastic wrap on them and wrap them around your rice balls. If using regular nori sheets cut into strips, wrap in plastic wrap. Onigiri can be stored at room temperature for several hours. If you wish to store them longer than that, store in the refrigerator and bring to room temperature before serving.',
+            'To serve, remove the plastic wrap from the nori wrapper, if necessary, and wrap the onigiri in the nori or simply remove the plastic wrap and serve at room temperature.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Onigiri or Japanese Rice Balls</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 1hr <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="11">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-11">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/toast.png" class="card-img-top" alt="Recipe 12" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Masala French Toast', 'img/toast.png', ['2 large eggs', '2 tablespoons red onion finely minced', '1 teaspoons green chili finely minced, jalapeno or other spicy chili works too', '¼ teaspoon ground turmeric', '½ teaspoon kosher salt', '2 tablespoons cilantro finely chopped', '⅓ cup milk or water', '2 slices bread sourdough, multigrain or whole wheat'], 
+            ['Whisk together onion, green chili, turmeric, salt, cilantro and milk in a wide bowl (big enough to fit the sliced bread). Add in the eggs and whisk for a minute. Dip one slice of bread in the egg mixture and gently press down with a fork so the bread can absorb the egg mix. Flip the bread over and repeat on the other side.',
+            'Heat a non stick pan (you can also use cast iron) and apply ½ teaspoon of oil. Carefully place the soaked bread on the pan. Spoon and spread over some extra onions from the egg mixture on top. Cook on medium heat for a minute or until the bottom side starts to turn golden brown.',
+            'Turn over and cook the other side for a minute until it becomes golden brown. Repeat with the second slice of bread.',
+            'Serve hot with ketchup, sriracha or green chutney.'
+            ])">
+            <div class="card-body">
+              <h5 class="card-title">Masala French Toast</h5>
+              <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 20 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+              <div class="container-rating justify-content-between align-items-center">
+                <div class="rating-wrap">
+                  <div class="center-rating">
+                    <div class="item" style="display: flex; align-items: center;">
+                      <div class="stars" data-item="12">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>
+                      <p class="rating-value pt-3 ps-5" id="rating-12">Rating: 0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center add-favorite">
+                <button class="btn btn-outline-danger p-2">
+                  <i class="fa fa-heart"></i> Add to Favorite
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!--third row end-->
+    </div>
+
+    <footer class="container-fluid text-lg-start mt-5 justify-content-center bg-white rounded">
+      <div class="container p-4">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4 col-md-6 mt-5 text-center footer-logo">
+            <img src="img/projectlogo.svg" alt="Logo" width="90" height="70" class="img-fluid" id="footer-logo">
+            <h3><span class="food fw-bold">Food</span><span class="fw-bold">Rep</span></h3>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 text-center">
+            <h3 class="fw-bold mb-5 text-black">Follow Us</h3>
+            <div class="d-flex justify-content-around">
+              <div class="d-flex flex-column align-items-center">
+                <img src="img/facebook.png" class="img-fluid img-shadow social-icon" alt="Facebook logo">
+                <small class="mt-4 fw-semibold text-color">Facebook</small>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img src="img/instagram.png" class="img-fluid img-shadow social-icon" alt="Instagram logo">
+                <small class="mt-4 fw-semibold text-color">Instagram</small>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img src="img/tiktok.png" class="img-fluid img-shadow social-icon" alt="TikTok logo">
+                <small class="mt-4 fw-semibold text-color">TikTok</small>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <img src="img/youtube.png" class="img-fluid img-shadow social-icon" alt="YouTube logo">
+                <small class="mt-4 fw-semibold text-color">YouTube</small>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-5 col-md-6">
+            <h3 class="section-title ff-secondary text-center mb-5 fw-bold">Contact</h3>
+            <p class="mb-2"><i class="fa fa-map me-2"></i> 14-B Sta. Ana Ave, Poblacion District, Davao City, 8000 Davao del Sur</p>
+            <p class="mb-2"><i class="fa fa-phone me-2"></i> +63-9959-0646-60</p>
+            <p class="mb-2"><i class="fa fa-envelope me-3"></i>foodrep@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="custom-hr">
+      <div class="container-fluid p-4 fs-6 footer-end m-0 rounded mb-3">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6 col-sm-12 fw-bold mb-2 mb-md-0 text-center text-md-start">
+                © 2024 Copyright: 
+                <a class="fw-bold ms-2" id="food-footer" href="#">FoodRep.com</a>
+            </div>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center justify-content-md-end gap-3">
+                <a href="about.html" class="fw-bold">About Us</a>
+                <a href="contact.html" class="fw-bold">Contact Us</a>
+                <a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a>
+                <a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#termsConditionsModal">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+   
+
+   
+
+ <!--Modal for the recipe list-->
+ <div class="modal fade" id="recipesModal" tabindex="-1" aria-labelledby="recipesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 style="color: #E96419;" class="modal-title" id="recipesModalLabel">Recipe Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="fw-bold" id="recipeTitle"></h3>
+        <img id="recipeImage" class="img-fluid mb-3 rounded" src="" alt="Recipe Image">
+        <h5 style="color: #E96419;">Ingredients:</h5>
+        <ul id="recipeIngredients"></ul>
+        <h5 style="color: #E96419;">Instructions:</h5>
+        <ol id="recipeInstructions"></ol> <!-- Changed from <p> to <ol> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of the modal recipe lists-->
+
+    <!-- Offcanvas Favorites List -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFavorites" aria-labelledby="offcanvasFavoritesLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasFavoritesLabel">Your Favorite Recipes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="favorites-list" class="list-group fs-5">
+          <!-- Favorite recipes will be added here -->
+          <li class="list-group-item">Chicken Sandwiches</li>
+          <li class="list-group-item">Chicken Curry</li>
+          <li class="list-group-item">American Pancake</li>
+          <li class="list-group-item">Filipino Chicken Adobo</li>
+          <li class="list-group-item">Pork Tocino</li>
+          <li class="list-group-item">Bacon Fried Rice</li>
+          <li class="list-group-item">Pan-Seared Salmon</li>
+          <li class="list-group-item">Beef Pasta in Tomato Sauce</li>
+          <li class="list-group-item">Masala omelette</li>
+          <li class="list-group-item">Champorado</li>
+          <li class="list-group-item">Onigiri or Japanese Rice Balls</li>
+          <li class="list-group-item">Masala French Toast</li>
+      </ul>
+      </div>
+    </div>
+
+      <!--Favorite-list modal details-->
+    <div class="modal fade" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+              <div class="modal-header" style="background-color: #FF7f50;">
+                  <h5 class="modal-title" style="color: whitesmoke;" id="recipeDetailsModalLabel">Recipe Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <h4 class="fw-bold" id="recipe-title"></h4>
+                  <img id="recipe-image" src="" alt="Recipe Image" class="img-fluid mb-3 rounded">
+                  <h4 style="color: #E96419;">Ingredients</h4>
+                  <ul id="recipe-ingredients"></ul>
+                  <h4 style="color: #E96419;">Instructions</h4>
+                  <ol id="recipe-instructions"></ol>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  
+
+
+  <!--Script for the modal recipe list-->
+  <script>
+    function showRecipeDetails(title, imageSrc, ingredients, instructions) {
+  document.getElementById('recipeTitle').innerText = title;
+  document.getElementById('recipeImage').src = imageSrc;
+  
+
+  const ingredientsList = document.getElementById('recipeIngredients');
+  ingredientsList.innerHTML = '';
+  ingredients.forEach(ingredient => {
+    const li = document.createElement('li');
+    li.innerText = ingredient;
+    ingredientsList.appendChild(li);
+  });
+
+  const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+  instructionsList.innerHTML = '';
+  instructions.forEach(instruction => {
+    const li = document.createElement('li');
+    li.innerText = instruction;
+    instructionsList.appendChild(li);
+  });
+}
+</script>
+ <!--end Script for the modal-->
+    
+
+        <script src="main.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js"></script>
+    
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

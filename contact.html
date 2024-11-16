@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>FoodRep</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
+            <div class="container-fluid fs-5 nav-text">
+                <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
+                <a class="navbar-brand me-auto" href="#">
+                    <span class="food">Food</span>
+                    <span class="rep">Rep</span>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-start text-center"> <!-- Center the links -->
+                        <li class="nav-item ps-4 pt-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
+                            <a class="nav-link dropdown-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ps-4 pt-2">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item ps-4 pt-2 pe-5">
+                            <a class="nav-link" id="active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto align-items-start me-5"> <!-- Move the navigation icon to the right end -->
+                        <li class="nav-item">
+                            <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
+                                <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
+                                <span class="fs-6 fa-icon" id="favorite-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      <!--Code Here Sugud!!!!-->
+      <section class="container-fluid contact-us-section py-5 rounded">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h5 class="text-center mb-5 fs-4" style="font-family:Lobster, sans-serif; color: #FF7F50;">We’d love to hear from you! Please fill out the form below.</h5>
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                            <label for="name" class="fs-6">Your Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <label for="email" class="fs-6">Email</label>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" placeholder="Message" rows="4" style="height: 100px;" required></textarea>
+                            <label for="message" class="fs-6">Message</label>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn w-40">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-lg-start justify-content-center bg-white rounded">
+        <div class="container p-4">
+          <div class="row g-4 mb-4">
+            <div class="col-lg-4 col-md-6 mt-5 text-center footer-logo">
+              <img src="img/projectlogo.svg" alt="Logo" width="90" height="70" class="img-fluid" id="footer-logo">
+              <h3><span class="food fw-bold">Food</span><span class="fw-bold">Rep</span></h3>
+            </div>
+      
+            <div class="col-lg-3 col-md-6 text-center">
+              <h3 class="fw-bold mb-5 text-black">Follow Us</h3>
+              <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column align-items-center">
+                  <img src="img/facebook.png" class="img-fluid img-shadow social-icon" alt="Facebook logo">
+                  <small class="mt-4 fw-semibold text-color">Facebook</small>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="img/instagram.png" class="img-fluid img-shadow social-icon" alt="Instagram logo">
+                  <small class="mt-4 fw-semibold text-color">Instagram</small>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="img/tiktok.png" class="img-fluid img-shadow social-icon" alt="TikTok logo">
+                  <small class="mt-4 fw-semibold text-color">TikTok</small>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                  <img src="img/youtube.png" class="img-fluid img-shadow social-icon" alt="YouTube logo">
+                  <small class="mt-4 fw-semibold text-color">YouTube</small>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-5 col-md-6">
+              <h3 class="section-title ff-secondary text-center mb-5 fw-bold">Contact</h3>
+              <p class="mb-2"><i class="fa fa-map me-2"></i> 14-B Sta. Ana Ave, Poblacion District, Davao City, 8000 Davao del Sur</p>
+              <p class="mb-2"><i class="fa fa-phone me-2"></i> +63-9959-0646-60</p>
+              <p class="mb-2"><i class="fa fa-envelope me-3"></i>foodrep@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="custom-hr">
+        <div class="container-fluid p-4 fs-6 footer-end m-0">
+          <div class="row align-items-center justify-content-between">
+              <div class="col-md-6 col-sm-12 fw-bold mb-2 mb-md-0 text-center text-md-start">
+                  © 2024 Copyright: 
+                  <a class="fw-bold ms-2" id="food-footer" href="#">FoodRep.com</a>
+              </div>
+              <div class="col-md-6 col-sm-12 d-flex justify-content-center justify-content-md-end gap-3">
+                  <a href="about.html" class="fw-bold">About Us</a>
+                  <a href="contact.html" class="fw-bold">Contact Us</a>
+                  <a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a>
+                  <a href="#" class="fw-bold" data-bs-toggle="modal" data-bs-target="#termsConditionsModal">Terms & Conditions</a>
+              </div>
+          </div>
+      </div>
+      </footer>
+    
+    <!-- Toast Notification -->
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert"  style="background-color: #FF7F50;" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <i class="fa-solid fa-circle-check fa-2x pe-2" style="color:#FF7F50"></i>
+            <strong class="me-auto">Success</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body" style="font-weight: bold; color: #363534;">
+            Thank you for contacting us! 
+          </div>
+        </div>
+      </div>
+    
+
+
+<!--End of your Code, dria ang last -->
+
+<div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bolder fs-5" style="color: #E96419;" id="privacyPolicyModalLabel">Privacy Policy</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Privacy Policy content goes here -->
+          <p class="fw-bold fs-5">Effective Date: <span style="color: #E96419;">[December 30, 2024]</span></p>
+          <p class="fw-normal fs-6">At FoodReps, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our website.</p>
+          <p class="fw-bold fs-5">1. Information We Collect</p>
+          <p class="fw-bold fs-6">
+            We collect two types of information:
+          </p>
+            <ul class="fw-light fs-6 text-body-secondary">
+              <li>Personal Information: This includes any data you voluntarily provide to us when you sign up for an account, store recipes, or engage with other features of the site (e.g., name, email address).</li>
+              <li>Non-Personal Information: This includes anonymous data such as your IP address, browser type, and usage patterns, which are collected automatically to help us improve the user experience.</li>
+            </ul>
+          
+          <p class="fw-bold fs-5">2. How We Use Your Information</p>
+          <p class="fw-bold fs-6">
+            The information we collect is used to:
+          </p>
+          
+            <ul class="fw-light fs-6 text-body-secondary">
+              <li>Provide and improve our services.</li>
+              <li>Personalize your experience.</li>
+              <li>Respond to your inquiries and provide customer support.</li>
+              <li>Send you updates or promotional offers, if you have opted to receive them.</li>
+              <li>Ensure the security of our website.</li>
+            </ul>
+          
+            
+          
+          <p class="fw-bold fs-5">3. Cookies</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            FoodReps uses cookies and similar tracking technologies to enhance your experience,
+             remember your preferences, and analyze how you use the site. You may disable cookies in your browser settings, 
+             but this may affect functionality.
+          </p>
+          <p class="fw-bold fs-5">4. Third-Party Services</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            We may use third-party services, such as analytics tools, 
+            which may collect information about your usage of the website. 
+            These third-party providers have their own privacy policies governing how they handle your information.
+          </p>
+          <p class="fw-bold fs-5">5. Data Security</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            We take the security of your personal information seriously and implement industry-standard security measures to protect your data from unauthorized access, 
+            alteration, or destruction. However, no method of transmission over the internet or method of electronic storage is 100% secure.
+          </p>
+          <p class="fw-bold fs-5">6. Your Rights</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            Depending on your location, you may have certain rights regarding your personal information, 
+            such as the right to access, update, or delete the information we hold about you. 
+          </p>
+          <p class="fw-bold fs-5">7. Children’s Privacy</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            FoodReps does not knowingly collect personal information from children under the age of 13. 
+            If you are a parent or guardian and believe that your child has provided us with personal data, 
+            please contact us immediately, and we will take steps to remove such information. 
+          </p>
+          <p class="fw-bold fs-5">8. Changes to This Privacy Policy</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            We may update this Privacy Policy from time to time. 
+            Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically. 
+          </p>
+          <p class="fw-bold fs-5">9. Contact Us</p>
+          <p class="fw-normal fs-6 text-body-secondary">
+            If you have any questions about this Privacy Policy or our data practices, please contact us at <span style="color: #E96419;">FoodRep.com</span>. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+              <!-- Terms & Conditions Modal -->
+    <div class="modal fade" id="termsConditionsModal" tabindex="-1" aria-labelledby="termsConditionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bolder fs-5" id="termsConditionsModalLabel" style="color: #E96419;">Terms & Conditions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Terms & Conditions content goes here -->
+            <p class="fw-bold fs-5">Effective Date: <span style="color: #E96419;">[December 30, 2024]</span></p>
+            <p class="fw-normal fs-6">Welcome to FoodReps! By accessing or using our website at <span class="fw-bold" style="color: #E96419;">FoodRep.com</span>, you agree to comply with and be bound by the following terms and conditions. Please read them carefully before using the website.</p>
+            
+            <p class="fw-bold fs-5">1. Acceptance of Terms</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              By using FoodReps, you agree to these Terms & Conditions. If you do not agree, please do not use our website or services. 
+              We reserve the right to modify these terms at any time, and it is your responsibility to review them regularly. 
+              Continued use of the website after changes are posted will constitute your acceptance of those changes.
+            </p>
+
+            <p class="fw-bold fs-5">2. User Accounts</p>
+            <ul class="fw-light fs-6 text-body-secondary">
+                <li>Registration: To access certain features of FoodReps, you may need to create an account. You are responsible for maintaining the confidentiality of your account information and password.</li>
+                <li>Accuracy of Information: You agree to provide accurate, complete, and current information during registration and to keep your account information up-to-date.</li>
+                <li>Account Termination: We reserve the right to terminate or suspend your account at our discretion, including if you violate any of these terms.</li>
+            </ul>
+            <p class="fw-bold fs-5">3. User Conduct</p>
+            <p class="fw-bold fs-6">You agree to use the FoodReps platform in a manner that is lawful and respectful. Specifically, you agree not to:</p>
+            <ul class="fw-light fs-6 text-body-secondary">
+              <li>Upload, post, or share content that is defamatory, abusive, or offensive.</li>
+              <li>Use the platform for any unlawful or fraudulent purpose.</li>
+              <li>Attempt to hack, disrupt, or compromise the website’s security.</li>
+              <li>Upload or transmit any viruses or malicious code.</li>
+              <li>Misuse the platform to spam, harass, or collect personal information from other users.</li>
+            </ul>
+
+            <p class="fw-bold fs-5">3. User Conduct</p>
+            <ul class="fw-light fs-6 text-body-secondary">
+              <li>Ownership: All content on the website, including recipes, text, graphics, logos, and other material, is the property of FoodReps or its content creators and is protected by intellectual property laws.</li>
+              <li>User-Generated Content: By submitting content (such as recipes, comments, or reviews) to FoodReps, you grant us a non-exclusive, royalty-free, worldwide license to use, modify, and display your content on the platform.</li>
+              <li>Copyright Infringement: If you believe your intellectual property rights have been violated, please contact us immediately at <span> <a href="#" class="fw-bold" style="color: #E96419;">foodrep@gmail.com</a></span>.</li>
+            </ul>
+
+            <p class="fw-bold fs-5">5. Third-Party Links</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              FoodReps may contain links to third-party websites or services that are not owned or controlled by us. 
+              We are not responsible for the content or privacy practices of these external sites. 
+              Visiting those sites is at your own risk, and you should review their terms and conditions and privacy policies.
+            </p>
+
+            <p class="fw-bold fs-5">6. Limitation of Liability</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              FoodReps provides the content and services “as is” without any warranties or guarantees. 
+              We do not warrant that the platform will be error-free, uninterrupted, or secure. 
+              To the fullest extent permitted by law, FoodReps shall not be liable for any direct, indirect, incidental, 
+              or consequential damages arising from your use or inability to use the platform, including but not limited to damages for loss of profits, 
+              data, or other intangible losses.
+            </p>
+
+            <p class="fw-bold fs-5">7. Indemnification</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              You agree to indemnify and hold harmless FoodReps, its affiliates, and its staff from any claims, damages, 
+              or liabilities arising out of your use of the website or your violation of these Terms & Conditions.
+            </p>
+
+            <p class="fw-bold fs-5">8. Governing Law</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              These Terms & Conditions shall be governed by and construed in accordance with the laws, 
+              without regard to its conflict of law principles. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts
+            </p>
+
+            <p class="fw-bold fs-5">9. Termination</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              We reserve the right to suspend or terminate your access to FoodReps at any time, 
+              with or without notice, for any reason, including breach of these Terms & Conditions.  
+            </p>
+            
+            <p class="fw-bold fs-5">10. Changes to Terms. Termination</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              We may update or modify these Terms & Conditions from time to time. Changes will be posted on this page, 
+              and the updated effective date will be indicated at the top. Your continued use of the platform constitutes acceptance of any changes.
+            </p>
+
+            <p class="fw-bold fs-5">11. Contact Information</p>
+            <p class="fw-normal fs-6 text-body-secondary">
+              If you have any questions about these Terms & Conditions, please contact us at <span><a href="#" class="fw-bold" style="color: #E96419;">foodrep@gmail.com</a></span>. 
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>  
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFavorites" aria-labelledby="offcanvasFavoritesLabel"><!--ayaw hilabti !!!-->
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasFavoritesLabel">Your Favorite Recipes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul id="favorites-list" class="list-group fs-5">
+            <!-- Favorite recipes will be added here -->
+            <li class="list-group-item">Chicken Sandwiches</li>
+                      <li class="list-group-item">Chicken Curry</li>
+                      <li class="list-group-item">American Pancake</li>
+                      <li class="list-group-item">Filipino Chicken Adobo</li>
+                      <li class="list-group-item">Pork Tocino</li>
+                      <li class="list-group-item">Bacon Fried Rice</li>
+                      <li class="list-group-item">Pan-Seared Salmon</li>
+                      <li class="list-group-item">Beef Pasta in Tomato Sauce</li>
+                      <li class="list-group-item">Masala omelette</li>
+                      <li class="list-group-item">Champorado</li>
+                      <li class="list-group-item">Onigiri or Japanese Rice Balls</li>
+                      <li class="list-group-item">Masala French Toast</li>
+        </ul>
+        </div>
+      </div>
+
+        <!--Favorite-list modal details-->
+        <div class="modal fade" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl">
+              <div class="modal-content">
+                  <div class="modal-header" style="background-color: #FF7f50;">
+                      <h5 class="modal-title" style="color: whitesmoke;" id="recipeDetailsModalLabel">Recipe Details</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <h4 class="fw-bold" id="recipe-title"></h4>
+                      <img id="recipe-image" src="" alt="Recipe Image" class="img-fluid mb-3 rounded">
+                      <h4 style="color: #E96419;">Ingredients</h4>
+                      <ul id="recipe-ingredients"></ul>
+                      <h4 style="color: #E96419;">Instructions</h4>
+                      <ol id="recipe-instructions"></ol>
+                  </div>
+              </div>
+          </div>
+      </div><!--ayaw lagi!!-->
+
+        <script src="main.js"></script>
+          
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>FoodRep</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+
+    <body>
+        <!--Code Here!!!! end-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
+            <div class="container-fluid fs-5 nav-text">
+                <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
+                <a class="navbar-brand me-auto" href="#">
+                    <span class="food">Food</span>
+                    <span class="rep">Rep</span>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-start text-center"> <!-- Center the links -->
+                        <li class="nav-item ps-4 pt-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
+                            <a class="nav-link dropdown-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ps-4 pt-2">
+                            <a class="nav-link" id="active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item ps-4 pt-2 pe-5">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto align-items-start me-5"> <!-- Move the navigation icon to the right end -->
+                        <li class="nav-item">
+                            <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
+                                <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
+                                <span class="fs-6 fa-icon" id="favorite-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!--Code Here!!!! end-->
+
+
+
+<div class="custom-container text-center py-5">
+    <h1>About FoodRep</h1>
+    <p style="font-size: 1.1rem;">Welcome to <span class="text-foodrep">FoodRep</span>, a meal planning and recipe management website developed as part of our school project! We're a team of students passionate about healthy eating, technology, and innovative solutions. Through this project, we aim to create an intuitive, user-friendly platform that makes meal planning easy, fun, and accessible for everyone.</p>    
+    <p>Our primary goal with <span class="text-foodrep">FoodRep</span> is to apply what we've learned about web development, including <span style="font-weight: bold;">HTML, CSS, JavaScript, and Bootstrap 5</span>, to build a real-world application that has practical value. This project has given us a unique opportunity to explore key concepts like responsive design, user interface, and data management, which are essential skills in today’s digital world.</p>
+    <h1>Who We Are</h1>
+    <p>We are a group of dedicated students from <span class="text-foodrep">Holy Cross of Davao College</span> who share a common interest in combining technology and practical life solutions. Each of us brings unique skills to the team, whether it's in coding, design, research, or problem-solving. Together, we’ve worked hard to create <span class="text-foodrep">FoodRep</span> as a collaborative project that reflects our skills, teamwork, and passion for learning. Our mission is not only to create a useful tool but to grow as developers, thinkers, and team players.</p>
+    <p>Thank you for visiting and supporting our learning journey. We hope <span class="text-foodrep">FoodRep</span> helps make meal planning simpler and more enjoyable!</p>
+</div>
+
+
+<div class="container-fluid py-5 hero-header mb-5">
+    <h5 class="text-center" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Team Members</h5>
+    <h1 class="text-center">The Master Chefs</h1>
+    <div class="container my-5 py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+            <img class="about-img" src="img/ireneo.png" alt="ireneo">
+        </div>
+        <div class="col-lg-6 text-center text-lg-start">
+            <h2>Ireneo Sario Madohinog III</h2>
+            <h5>Developer</h5>
+            <p>I am a front-end developer and the leader of our team, currently pursuing a Bachelor of Science in Information Technology at Guerrero Street, Davao City. As the youngest in my family, I was one of the key contributors to the concept of this project, which I dedicate to my late mother.</p>
+            <p>Her work as a chef at a renowned restaurant in Panabo City deeply inspired and influenced me.</p>
+            <a href="contact.html" class="btn draw-border py-sm-3 px-sm-5 sliderInLeft">Lets Talk</a>
+        </div>
+      </div>
+    </div>   
+  </div>
+
+
+<!--Dria taman-->
+
+
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFavorites" aria-labelledby="offcanvasFavoritesLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasFavoritesLabel">Your Favorite Recipes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul id="favorites-list" class="list-group fs-5">
+            <!-- Favorite recipes will be added here -->
+                      <li class="list-group-item">Chicken Sandwiches</li>
+                      <li class="list-group-item">Chicken Curry</li>
+                      <li class="list-group-item">American Pancake</li>
+                      <li class="list-group-item">Filipino Chicken Adobo</li>
+                      <li class="list-group-item">Pork Tocino</li>
+                      <li class="list-group-item">Bacon Fried Rice</li>
+                      <li class="list-group-item">Pan-Seared Salmon</li>
+                      <li class="list-group-item">Beef Pasta in Tomato Sauce</li>
+                      <li class="list-group-item">Masala omelette</li>
+                      <li class="list-group-item">Champorado</li>
+                      <li class="list-group-item">Onigiri or Japanese Rice Balls</li>
+                      <li class="list-group-item">Masala French Toast</li>
+          </ul>
+        </div>
+      </div>
+
+       <!--Favorite-list modal details-->
+       <div class="modal fade" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #FF7f50;">
+                    <h5 class="modal-title" style="color: whitesmoke;" id="recipeDetailsModalLabel">Recipe Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="fw-bold" id="recipe-title"></h4>
+                    <img id="recipe-image" src="" alt="Recipe Image" class="img-fluid mb-3 rounded">
+                    <h4 style="color: #E96419;">Ingredients</h4>
+                    <ul id="recipe-ingredients"></ul>
+                    <h4 style="color: #E96419;">Instructions</h4>
+                    <ol id="recipe-instructions"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <script src="main.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
