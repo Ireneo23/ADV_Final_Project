@@ -201,6 +201,109 @@ document.addEventListener('DOMContentLoaded', function() {
         'Turn over and cook the other side for a minute until it becomes golden brown. Repeat with the second slice of bread.',
         'Serve hot with ketchup, sriracha or green chutney.'
         ]
+    },
+
+
+    //breakfast page
+    'Pesto Eggs': {
+      title: 'Pesto Eggs',
+      image: 'img/bf1_Pesto_egg.png',
+      ingredients: ['2 tablespoons pesto', '2 eggs', 'pinch of kosher salt', 'pinch of ground black pepper', 'pinch of red pepper flakes', '2 pieces sourdough bread', '2 ounces herbed goat\'s cheese'],
+      instructions:  ['Heat a medium frying pan over medium heat. Once hot, spread the pesto in a thin layer across the pan.',
+        'When the pesto is warm, crack the eggs into the pan. Sprinkle with salt, pepper, and red pepper flakes. Cook the eggs for 4 to 5 minutes or until the whites are set and no longer translucent.',
+        'Meanwhile, toast the bread and spread the goat cheese on it.',
+        'Remove the eggs from the pan and place them on the toast.',
+        'Serve immediately and enjoy!'
+      ]
+    },
+
+    'Garlic and Rosemary Beef Tips': {
+      title: 'Garlic and Rosemary Beef Tips',
+      image: 'img/bf2_beeftips1.png',
+      ingredients: ['1 1/2- 2 lbs beef tips (cut into 1 inch chunks)', '3 T olive oil', '1/3 cup flour', '1 diced onion', '2 T minced garlic', '1/4 cup Worcestershire sauce', '1/2 cup of dry red wine', '1 T onion powder', '1 T garlic powder', '2 cups beef broth', '1-2 sprigs rosemary', '1 sprig fresh thyme', 'salt and pepper to taste'],
+      instructions:  ['Season beef with spices and Worcestershire sauce',
+        'Then toss beef in 1/4 of the flour',
+        'Heat olive oil in pot on medium heat',
+        'Brown beef in batches on both sides until all meat is brown; set aside',
+        'Saute onions until translucent',
+        'Sprinkle in remaining flour and stir until no longer visible',
+        'Add in the garlic',
+        'Pour in red wine and stir until brown bits loosen from the bottom of the pot',
+        'Add beef back in',
+        'Pour in the beef broth',
+        'Bring to a simmer',
+        'Add in thyme and rosemary',
+        'Lower heat, cover, and simmer for 2 hours or until beef is fork tender',
+        'Remove thyme and rosemary sprigs before serving',
+        'Enjoy!'
+      ]
+    },
+    'Chocolate Pancakes': {
+      title: 'Chocolate Pancakes',
+      image: 'img/bf3_Chocolate-Pancakes.png',
+      ingredients:  ['1 ⅓ cups (185g) all-purpose flour ', '¼ cup (25g) cocoa powder (I use Dutch-processed)', '2 teaspoons baking powder', '¼ teaspoon salt', '2 eggs', '⅓ cup (65g) granulated sugar', '1 cup (240 ml) whole milk', '3 tablespoons canola or vegetable oil (or 45g melted butter)', '1 teaspoon pure vanilla extract', '½ cup (85g) chocolate chips or chunks', 'butter or oil , for cooking', '140 g (5 oz.) bittersweet or semisweet chocolate', '½ cup (120 ml) heavy cream'],
+      instructions:  ['In a large bowl, sift together flour, cocoa powder, baking powder with a fine mesh strainer, and salt (or whisk well with a whisk). Set aside.',
+        'In a separate medium bowl, whisk together egg and sugar until well combined. Add milk, oil (or melted butter), and vanilla extract. Pour the wet ingredients into the dry ingredients and stir just until combined and moistened using a rubber spatula or whisk. Do not over mix. Mix in chocolate chips or chunks. Set batter aside and make the chocolate sauce.',
+        'Chocolate sauce: In a medium heatproof bowl, combine chocolate and heavy cream. Microwave in 20- to 30-second increments, mixing in between, until chocolate is melted and mixture is smooth. You can also melt the chocolate in a stainless steel bowl set over simmering water in a medium saucepain, creating a double boiler. Set aside while making the pancakes. I like to pour it over the pancakes while it’s warm.',
+        'Cook the pancakes: Heat a griddle or skillet over medium heat. Coat with butter or oil. For each pancake, drop ¼ cup of batter onto skillet. Cook 1-2 minutes, until surface of pancakes have some bubbles and the bottom appears to be done. Flip carefully and cook another 1-2 minutes. Transfer to a plate and if you want you can cover the plate loosely with aluminum foil to keep warm. Coat the skillet with butter or oil before every pancake or batch of pancakes to prevent sticking.',
+        'Serve immediately with chocolate sauce (rewarm sauce in the microwave for a few seconds if needed).'
+      ]
+    },
+
+    //lunch page
+    'Egg Fried Rice': {
+      title: 'Egg Fried Rice',
+      image: 'img/lunch1_Easy-Egg-Fried-Rice1.png',
+      ingredients:  ['Day-old rice: Use either cooked jasmine or brown rice, preferably a day-old or cold. This helps in achieving the perfect texture without turning the dish mushy. For more insights into the best rice selection, check The Best Rice for Egg Fried Rice.', 'three to four eggs', 'Cooking oil: Options include avocado oil, canola oil, or even butter for enhanced flavor.', 'Aromatics: Garlic, ginger, and scallions (green onions) add layers of flavor and fragrance.', 'Vegetables: Use frozen mixed vegetables, peas, carrots, bell peppers, or edamame. Feel free to mix and match based on what you have on hand.', 'Soy sauce: This gives the fried rice its characteristic savory umami taste.', 'Salt, white pepper, and optional additions like MSG or oyster sauce for added depth.', 'Optional extras: Sesame oil and sesame seeds can be included for an aromatic finish.'],
+      instructions:  ['Rice Preparation: Ensure your rice is cooked and has been drying out for at least one day. This is crucial to avoid a mushy texture.',
+        'Chop Aromatics and Prepare Vegetables: Dice garlic, ginger, and scallions. Prepare your chosen vegetables by chopping them into desired sizes.',
+        'Scramble the Eggs: In a large wok or skillet, scramble the eggs until they are about 80% cooked. Remove the eggs and set them aside.',
+        'Sauté the Aromatics and Vegetables: Using the same pan, heat your choice of cooking oil over medium-high heat. Add the aromatics and cook until fragrant, followed by your selection of vegetables.',
+        'Combine with Rice and Eggs: Introduce the day-old rice into the pan, along with the partially cooked eggs. Stir-fry the mixture to combine.',
+        'Season: Add your soy sauce, salt, and other seasonings such as white pepper and optional MSG or oyster sauce. Stir until the rice is evenly coated.',
+        'Finish and Serve: Add optional sesame oil and sesame seeds, then serve warm. This dish pairs wonderfully with soups and other side dishes for a complete meal.'
+      ]
+    },
+    'Beef Short Rib Kare Kare': {
+      title: 'Beef Short Rib Kare Kare',
+      image: 'img/lunch2_Beef-Short-Rib-Kare-Kare-Recipe-Panlasang-Pinoy.png',
+      ingredients:  ['2 1/2 lbs. beef short rib', '10 pieces snake beans cut into 2 inch length', '1 bunch baby bok choy', '1 1/4 cups ground peanut', '1 medium onion chopped', '3 cloves garlic minced', '1 small banana blossom sliced', '1 tablespoon glutinous rice flour', '3/4 cup annatto water', '1 1/2 cups water', '3 tablespoons cooking oil', '1/2 cup sautéed shrimp paste'],
+      instructions:  ['Heat oil in a pressure cooker.',
+        'Once the oil becomes hot, saute garlic and onion.',
+        'Add the ground peanut. Cook while stirring for 3 minutes.',
+        'Put the beef short ribs in. Cook until light brown.',
+        'Pour annatto water and water. Let boil. Note: Make your own annatto water by soaking 1/2 cup annatto or atsuete seeds in 3/4 cup warm water for at least 10 minutes and then stir thoroughly to extract the color.',
+        'Cover the pressure cooker. Cook for 30 minutes.',
+        'Safely remove the cover and then add the banana blossoms. Cook for 5 minutes. Note: Prepare the banana blossoms by soaking it in water with 3 tablespoons salt for 15 minutes. Wring the banana blossoms before cooking.',
+        'Pour the glutinous rice flour with water into the pot. Stir until the texture of the liquid thickens. Note: You can use cornstarch as an alternative ingredient.',
+        'Add snake beans and bok choy. Cook for 5 minutes.',
+        'Transfer to a serving bowl. Serve with shrimp paste.',
+        'Share and enjoy!'
+      ]
+    },
+    'Spicy Korean Chicken Katsu': {
+      title: 'Spicy Korean Chicken Katsu',
+      image: 'img/lunch3_IMG_8988-1024x683.png',
+      ingredients:  ['1/4 cup soy sauce', '1 TBS rice vinegar substitute with white vinegar-but try to use rice vinegar!', '1/8 cup plus 1 TBS sugar', '1/8 cup honey', '1/8 cup gochujang(korean hot sacue )', '2 cloves garlic, finely minced', '1 tsp fresh ginger, minced subsitute with dried ginger', '2 chicken breasts, sliced in half horizontally(so 4-5 thinner pieces) if you want to use a full package of chicken double the sauce recipe.', '1 cup flour', '1 tsp garlic powder', '1/2 tsp salt', '1/8 tsp black pepper(a pinch)', '2 eggs', '1 cup golden breadcrumbs or japanese panko', '1/4- 1/2 cup oil, for frying'],
+      instructions:  ['To a medium frying pan, add all sauce ingredients. Make sure the garlic and ginger are very finely minced.',
+        'Place over medium high heat and bring to a boil(this should take a minute). Lower the heat a bit and let the sauce cook on a low boil for one minute- it will thicken slightly. Remove from the heat and set aside.',
+        'Slice the chicken breasts horizontally in half to about 1/2 inch in thickness. You don\'t want them too thin(thus I don\'t use already sliced chicken) but if they are extra thick they won\'t fry properly. Optional- place a piece of wax paper over the sliced chicken and pound them to uniform thickness with a mallet.            ',
+        'Lay out three plates.\n\t1.In one place the flour and season it with garlic powder, salt, and black pepper. Mix to combine.\n\t2.In the second crack the eggs and give them a whisk.\n\t3.In the third pour the panko/breadcrumbs.',
+        'Dip each piece of chicken into the flour, making sure it is coated completely. Then dip it into the egg and lastly into the breadcrumbs. Place all the coated chicken on a seperate plate. Heat up the oil in a frying pan- 1/4 to 1/2 cup oil, depending on the size of your pan. You\'re going for a light fry here, not a deep fry. Once the oil is hot, fry the chicken until golden, flip, and fry the second side.',
+        'Lay the chicken on a paper towel to catch some of the oil. When ready to serve, set your serving plate up with rice. Heat up the sauce and dip each piece of chicken, turning it to make sure the whole cutlet is coated red and saucy. MMM!. Transfer the chicken to a cutting board(set this up right next to the pan so the sauce doesn\'t drip everywhere. Slice the cutlet on the diagonal into thin strips. Keeping the shape of the cutlet, slide your knife under the slices and transfer it all at once on top of the rice.',
+        'Garnish with black or white sesame seeds, and sliced green onion if desired. Enjoy!'
+      ]
+    },
+    'Baked Chicken Wings': {
+      title: 'Baked Chicken Wings',
+      image: 'img/lunch4_crispy-baked-chicken-wings.png',
+      ingredients:  ['2 lb. (900g) split chicken wings', '1/2 cup oil', '1 tablespoon garlic powder', '1 tablespoon onion powder', '1 teaspoon paprika', '1/2 teaspoon Cayenne', '1 1/2 teaspoon cumin', '1 teaspoon oregano', '1 teaspoon black pepper', '1/2 teaspoon salt, or to taste', '1 teaspoon instant chicken stock (optional)'],
+      instructions:  ['To make the baked chicken wings: In a small bow or shallow plate, combine garlic powder, onion powder, paprika, cumin, oregano, Cayenne, pepper, salt, and instant chicken stock.',
+        'Arrange the chicken wings in a large salad bowl, drizzle with oil, and sprinkle with the spice mix. Mix thoroughly so the chicken is coated. Allow to rest for 30 minutes; overnight in the refrigerator is best. In the meantime, preheat your oven to 450ºF (230ºC) and set the rack to the middle position.',
+        'When ready to bake, spread the chicken wings on a rimmed baking sheet (you can line it with foil or parchment paper).',
+        'Place the baking sheet with the wings in the oven and reduce the temperature to 340ºF (170ºC) for 50 minutes to 1 hour. You can flip the wings at mid-cooking time if you like.',
+        'Carefully remove the baking sheet from the oven and place it on a cooling rack. Let rest for 5 minutes. This will help the baked chicken wings retain more of their crispiness. Garnish with lemon slices and cilantro if you like. Enjoy!'
+      ]
     }
   };
   // Add event listener to favorite items recipe.html
@@ -263,6 +366,7 @@ document.querySelectorAll('.stars').forEach(stars => {
   function displayRating(item, rating) {
 	document.getElementById(`rating-${item}`).textContent = `Rating: ${rating}`;
   }
+  
 
 //contact us
 document.getElementById("contactForm").addEventListener("submit", function(event) {

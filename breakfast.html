@@ -13,7 +13,7 @@
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-T3    c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,57 +23,221 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
-            <div class="container-fluid fs-5 nav-text">
-                <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
-                <a class="navbar-brand me-auto" href="#">
-                    <span class="food">Food</span>
-                    <span class="rep">Rep</span>
-                </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto align-items-start text-center"> <!-- Center the links -->
-                        <li class="nav-item ps-4 pt-2">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
-                            <a class="nav-link dropdown-toggler active" id="active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Breakfast</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ps-4 pt-2">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item ps-4 pt-2 pe-5">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto align-items-start me-5"> <!-- Move the navigation icon to the right end -->
-                        <li class="nav-item">
-                            <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
-                                <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
-                                <span class="fs-6 fa-icon" id="favorite-count">0</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+       
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-shadow">
+        <div class="container-fluid fs-5 nav-text">
+            <img src="img/projectlogo.svg" alt="Logo" width="70" height="60" class="d-inline-block align-text-top animate__animated animate__bounce animate__delay-1s ms-5" id="logo">
+            <a class="navbar-brand me-auto" href="#">
+                <span class="food">Food</span>
+                <span class="rep">Rep</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-start text-center"> <!-- Center the links -->
+                    <li class="nav-item ps-4 pt-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
+                        <a class="nav-link dropdown-toggler" id="active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dessert.html">Dessert</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ps-4 pt-2">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item ps-4 pt-2 pe-5">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto align-items-start me-5"> <!-- Move the navigation icon to the right end -->
+                    <li class="nav-item">
+                        <a class="nav-icon" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFavorites" aria-controls="offcanvasFavorites">
+                            <button type="button" class="btn nav-link active fs-6" aria-pressed="true"><i class="fa-regular fa-heart heart-icon" style="font-size: 24px;"></i></button>
+                            <span class="fs-6 fa-icon" id="favorite-count">0</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
 <!--Code Here!!!! Sugud-->
-
-
+ 
+ 
+<div class="container mt-5">
+    <div id="recipe-list" class="row">
+      <div class="col-md-3 card-rep">
+        <div class="card">
+          <img src="img/bf2_beeftips1.png" class="card-img-top" alt="Recipe 1" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Garlic and Rosemary Beef Tips', 'img/bf2_beeftips1.png', ['1 1/2- 2 lbs beef tips (cut into 1 inch chunks)', '3 T olive oil', '1/3 cup flour', '1 diced onion', '2 T minced garlic', '1/4 cup Worcestershire sauce', '1/2 cup of dry red wine', '1 T onion powder', '1 T garlic powder', '2 cups beef broth', '1-2 sprigs rosemary', '1 sprig fresh thyme', 'salt and pepper to taste'], 
+          ['Season beef with spices and Worcestershire sauce',
+            'Then toss beef in 1/4 of the flour',
+            'Heat olive oil in pot on medium heat',
+            'Brown beef in batches on both sides until all meat is brown; set aside',
+            'Saute onions until translucent',
+            'Sprinkle in remaining flour and stir until no longer visible',
+            'Add in the garlic',
+            'Pour in red wine and stir until brown bits loosen from the bottom of the pot',
+            'Add beef back in',
+            'Pour in the beef broth',
+            'Bring to a simmer',
+            'Add in thyme and rosemary',
+            'Lower heat, cover, and simmer for 2 hours or until beef is fork tender',
+            'Remove thyme and rosemary sprigs before serving',
+            'Enjoy!'
+          ])">
+          <div class="card-body">
+            <h5 class="card-title">Garlic and Rosemary Beef Tips</h5>
+            <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 20 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+            
+            <div class="container-rating justify-content-between align-items-center">
+              <div class="rating-wrap">
+                <div class="center-rating">
+                  <div class="item" style="display: flex; align-items: center;">
+                    <div class="stars" data-item="1">
+                      <span class="star" data-rating="1">&#9733;</span>
+                      <span class="star" data-rating="2">&#9733;</span>
+                      <span class="star" data-rating="3">&#9733;</span>
+                      <span class="star" data-rating="4">&#9733;</span>
+                      <span class="star" data-rating="5">&#9733;</span>
+                    </div>
+                    <p class="rating-value pt-3 ps-5" id="rating-1">Rating: 0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <div class="d-flex justify-content-center add-favorite" id="liveAlertPlaceholder">
+              <button class="btn btn-outline-danger p-2" id="liveAlertBtn">
+                <i class="fa fa-heart"></i> Add to Favorite
+              </button>
+            </div>
+          </div>
+        </div>  
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/bf1_Pesto_egg.png" class="card-img-top" alt="Recipe 11" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pesto Eggs', 'img/bf1_Pesto_egg.png', ['2 tablespoons pesto', '2 eggs', 'pinch of kosher salt', 'pinch of ground black pepper', 'pinch of red pepper flakes', '2 pieces sourdough bread', '2 ounces herbed goat\'s cheese'],
+          ['Heat a medium frying pan over medium heat. Once hot, spread the pesto in a thin layer across the pan.',
+            'When the pesto is warm, crack the eggs into the pan. Sprinkle with salt, pepper, and red pepper flakes. Cook the eggs for 4 to 5 minutes or until the whites are set and no longer translucent.',
+            'Meanwhile, toast the bread and spread the goat cheese on it.',
+            'Remove the eggs from the pan and place them on the toast.',
+            'Serve immediately and enjoy!'
+          ])">
+          <div class="card-body">
+            <h5 class="card-title">Pesto Eggs</h5>
+            <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 50 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+            <div class="container-rating justify-content-between align-items-center">
+              <div class="rating-wrap">
+                <div class="center-rating">
+                  <div class="item" style="display: flex; align-items: center;">
+                    <div class="stars" data-item="2">
+                      <span class="star" data-rating="1">&#9733;</span>
+                      <span class="star" data-rating="2">&#9733;</span>
+                      <span class="star" data-rating="3">&#9733;</span>
+                      <span class="star" data-rating="4">&#9733;</span>
+                      <span class="star" data-rating="5">&#9733;</span>
+                    </div>
+                    <p class="rating-value pt-3 ps-5" id="rating-2">Rating: 0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            
+            <div class="d-flex justify-content-center add-favorite">
+              <button class="btn btn-outline-danger p-2">
+                <i class="fa fa-heart"></i> Add to Favorite
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/champorado.png" class="card-img-top" alt="Recipe 3" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Champorado', 'img/champorado.png', ['½ cup cocoa powder', '4 cups water', '1 cup glutinous/sticky rice', '½ cup sugar - add more if needed', '12 fluid ounces (1can) evaporated milk'], 
+              ['In a pot over high heat, bring 3 cups of water to boil. Add the glutinous rice and let it cook for 5 minutes, stirring from time to time.',
+              'Dissolve cocoa powder in 1 cup warm water. Make sure all lumps are gone. Pour cocoa mixture into the pot of rice and continue cooking until it gets thicker. Turn heat to medium-low. Add the sugar and stir occasionally to prevent rice from sticking at the bottom of the pot. Add more water if it gets too thick and the rice is not yet done.',
+              'Remove from heat once the glutinous rice is done and the desired consistency is achieved. Note, however, that the glutinous rice will continue to expand and absorb the liquid even after cooking.',
+              'Serve Champorado in a bowl and add some evaporated milk on top.'
+              ])">
+          <div class="card-body">
+            <h5 class="card-title">Champorado</h5>
+            <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 20 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+            <div class="container-rating justify-content-between align-items-center">
+              <div class="rating-wrap">
+                <div class="center-rating">
+                  <div class="item" style="display: flex; align-items: center;">
+                    <div class="stars" data-item="3">
+                      <span class="star" data-rating="1">&#9733;</span>
+                      <span class="star" data-rating="2">&#9733;</span>
+                      <span class="star" data-rating="3">&#9733;</span>
+                      <span class="star" data-rating="4">&#9733;</span>
+                      <span class="star" data-rating="5">&#9733;</span>
+                    </div>
+                    <p class="rating-value pt-3 ps-5" id="rating-3">Rating: 0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center add-favorite">
+              <button class="btn btn-outline-danger p-2">
+                <i class="fa fa-heart"></i> Add to Favorite
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="img/bf3_Chocolate-Pancakes.png" class="card-img-top" alt="Recipe 4" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Chocolate Pancakes', 'img/bf3_Chocolate-Pancakes.png', ['1 ⅓ cups (185g) all-purpose flour ', '¼ cup (25g) cocoa powder (I use Dutch-processed)', '2 teaspoons baking powder', '¼ teaspoon salt', '2 eggs', '⅓ cup (65g) granulated sugar', '1 cup (240 ml) whole milk', '3 tablespoons canola or vegetable oil (or 45g melted butter)', '1 teaspoon pure vanilla extract', '½ cup (85g) chocolate chips or chunks', 'butter or oil , for cooking', '140 g (5 oz.) bittersweet or semisweet chocolate', '½ cup (120 ml) heavy cream'], 
+          ['In a large bowl, sift together flour, cocoa powder, baking powder with a fine mesh strainer, and salt (or whisk well with a whisk). Set aside.',
+            'In a separate medium bowl, whisk together egg and sugar until well combined. Add milk, oil (or melted butter), and vanilla extract. Pour the wet ingredients into the dry ingredients and stir just until combined and moistened using a rubber spatula or whisk. Do not over mix. Mix in chocolate chips or chunks. Set batter aside and make the chocolate sauce.',
+            'Chocolate sauce: In a medium heatproof bowl, combine chocolate and heavy cream. Microwave in 20- to 30-second increments, mixing in between, until chocolate is melted and mixture is smooth. You can also melt the chocolate in a stainless steel bowl set over simmering water in a medium saucepain, creating a double boiler. Set aside while making the pancakes. I like to pour it over the pancakes while it’s warm.',
+            'Cook the pancakes: Heat a griddle or skillet over medium heat. Coat with butter or oil. For each pancake, drop ¼ cup of batter onto skillet. Cook 1-2 minutes, until surface of pancakes have some bubbles and the bottom appears to be done. Flip carefully and cook another 1-2 minutes. Transfer to a plate and if you want you can cover the plate loosely with aluminum foil to keep warm. Coat the skillet with butter or oil before every pancake or batch of pancakes to prevent sticking.',
+            'Serve immediately with chocolate sauce (rewarm sauce in the microwave for a few seconds if needed).'
+          ])">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Pancakes</h5>
+            <p class="card-text" style="font-style: italic; font-weight: 500; font-size: small"><i class="fa-regular fa-clock" style="color: #FF7f50;"></i> 40 min <i class="fa-solid fa-utensils" style="color: #FF7f50;"></i> Serving: 4-5 person</p>
+            <div class="container-rating justify-content-between align-items-center">
+              <div class="rating-wrap">
+                <div class="center-rating">
+                  <div class="item" style="display: flex; align-items: center;">
+                    <div class="stars" data-item="4">
+                      <span class="star" data-rating="1">&#9733;</span>
+                      <span class="star" data-rating="2">&#9733;</span>
+                      <span class="star" data-rating="3">&#9733;</span>
+                      <span class="star" data-rating="4">&#9733;</span>
+                      <span class="star" data-rating="5">&#9733;</span>
+                    </div>
+                    <p class="rating-value pt-3 ps-5" id="rating-4">Rating: 0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center add-favorite">
+              <button class="btn btn-outline-danger p-2">
+                <i class="fa fa-heart"></i> Add to Favorite
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!--first row end-->
 
 
 <!--Dria taman-->
@@ -81,6 +245,28 @@
 
 
 
+ <!--Modal for the recipe list-->
+ <div class="modal fade" id="recipesModal" tabindex="-1" aria-labelledby="recipesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 style="color: #E96419;" class="modal-title" id="recipesModalLabel">Recipe Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="fw-bold" id="recipeTitle"></h3>
+          <img id="recipeImage" class="img-fluid mb-3 rounded" src="" alt="Recipe Image">
+          <h5 style="color: #E96419;">Ingredients:</h5>
+          <ul id="recipeIngredients"></ul>
+          <h5 style="color: #E96419;">Instructions:</h5>
+          <ol id="recipeInstructions"></ol> <!-- Changed from <p> to <ol> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of the modal recipe lists-->
+  
+      <!-- Offcanvas Favorites List -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFavorites" aria-labelledby="offcanvasFavoritesLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasFavoritesLabel">Your Favorite Recipes</h5>
@@ -89,24 +275,17 @@
         <div class="offcanvas-body">
           <ul id="favorites-list" class="list-group fs-5">
             <!-- Favorite recipes will be added here -->
-                      <li class="list-group-item">Chicken Sandwiches</li>
-                      <li class="list-group-item">Chicken Curry</li>
-                      <li class="list-group-item">American Pancake</li>
-                      <li class="list-group-item">Filipino Chicken Adobo</li>
-                      <li class="list-group-item">Pork Tocino</li>
-                      <li class="list-group-item">Bacon Fried Rice</li>
-                      <li class="list-group-item">Pan-Seared Salmon</li>
-                      <li class="list-group-item">Beef Pasta in Tomato Sauce</li>
-                      <li class="list-group-item">Masala omelette</li>
-                      <li class="list-group-item">Champorado</li>
-                      <li class="list-group-item">Onigiri or Japanese Rice Balls</li>
-                      <li class="list-group-item">Masala French Toast</li>
-          </ul>
+            <li class="list-group-item">Garlic and Rosemary Beef Tips</li>
+            <li class="list-group-item">Pesto Eggs</li>
+            <li class="list-group-item">Champorado</li>
+            <li class="list-group-item">Chocolate Pancakes</li>
+            
+        </ul>
         </div>
       </div>
-
-       <!--Favorite-list modal details-->
-       <div class="modal fade" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
+  
+        <!--Favorite-list modal details-->
+      <div class="modal fade" id="recipeDetailsModal" tabindex="-1" aria-labelledby="recipeDetailsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #FF7f50;">
@@ -124,6 +303,36 @@
             </div>
         </div>
     </div>
+  
+  
+    
+  
+  
+    <!--Script for the modal recipe list-->
+    <script>
+      function showRecipeDetails(title, imageSrc, ingredients, instructions) {
+    document.getElementById('recipeTitle').innerText = title;
+    document.getElementById('recipeImage').src = imageSrc;
+    
+  
+    const ingredientsList = document.getElementById('recipeIngredients');
+    ingredientsList.innerHTML = '';
+    ingredients.forEach(ingredient => {
+      const li = document.createElement('li');
+      li.innerText = ingredient;
+      ingredientsList.appendChild(li);
+    });
+  
+    const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+    instructionsList.innerHTML = '';
+    instructions.forEach(instruction => {
+      const li = document.createElement('li');
+      li.innerText = instruction;
+      instructionsList.appendChild(li);
+    });
+  }
+  </script>
+   <!--end Script for the modal-->
 
       <script src="main.js"></script>
 
