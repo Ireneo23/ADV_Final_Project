@@ -304,7 +304,62 @@ document.addEventListener('DOMContentLoaded', function() {
         'Place the baking sheet with the wings in the oven and reduce the temperature to 340ºF (170ºC) for 50 minutes to 1 hour. You can flip the wings at mid-cooking time if you like.',
         'Carefully remove the baking sheet from the oven and place it on a cooling rack. Let rest for 5 minutes. This will help the baked chicken wings retain more of their crispiness. Garnish with lemon slices and cilantro if you like. Enjoy!'
       ]
+    },
+
+    //dinner page
+    'Asado Chicken with Lemon Garlic Spinach': {
+      title: 'Asado Chicken with Lemon Garlic Spinach',
+      image: 'img/dinner1_Asado-Chicken-with-Lemon-Garlic-Spinach-recipe-4.png',
+      ingredients:  ['4 small chicken breasts', '6 cups fresh spinach', '4 garlic cloves, minced', '2 teaspoons oregano', '1 tablespoon smoked paprika', '2 teaspoons cumin Powder', '1/4 cup (60ml) chicken stock', '1/4 cup (60ml) lemon juice, more for serving', '1/2 teaspoon onion powder', '1/2 teaspoon chili flakes', '1/4 cup (60ml) Olive Oil', 'Salt and fresh cracked black pepper'],
+      instructions:  ['To make this Asado chicken breasts recipe: In a bowl, combine paprika, cumin, chicken stock, lemon juice, onion powder, oregano, half the minced garlic, chili flakes, and olive oil. Taste and adjust salt and lemon before adding chicken breast.',
+        'Add in chicken breasts and coat all sides. Cover and marinate chicken breasts for at least 30 minutes in the refrigerator. When ready to cook, remove chicken breasts from the marinade and reserve the marinade for later.',
+        'While the chicken breasts finish marinating, heat a skillet with a little olive oil. Add the spinach and season with salt, pepper, and red chili pepper flakes (if using). Add the remaining minced garlic and lemon juice and saute spinach for 2-3 minutes over medium-low. Remove cooked spinach from the skillet and set aside.',
+        'Rinse and wipe clean the skillet. Heat 1 tablespoon oil in the skillet over medium-low heat and cook marinated chicken breast on both sides, until the internal temperature reads 165ºF (74ºC) on an instant-read thermometer, approx. 15 minutes. Remove to a plate, allow to rest for a couple of minutes then slice.',
+        'While the chicken is resting, you can deglaze the skillet with chicken stock and add the remaining marinade. Cook on medium until reduced, 2 minutes approximatively.',
+        'Divide sauteed spinach into plates or bowls and arrange sliced chicken breasts. Drizzle with the sauce. Serve the chicken and sauteed spinach garnished with lemon slices, and fresh chopped parsley. Enjoy! Add an extra splash of lemon juice and sprinkle some grated parmesan (optional) over the spinach before serving the Asado chicken breasts and spinach. Enjoy!'
+      ]
+    },
+    'Garlic Parmesan Chicken': {
+      title: 'Garlic Parmesan Chicken',
+      image: 'img/dinner2_Garlic-Parmesan-Chicken-1.png',
+      ingredients:  ['Sauce:', '1 ¾ cups chicken broth', '¼ cup heavy cream', '1 teaspoon Worcestershire sauce', '1 teaspoon mustard powder', '1 teaspoon honey', '½ chicken bouillon cube', '½ teaspoon EACH: onion powder, oregano, basil, parsley', 'Chicken/Other:', '2 large boneless skinless chicken breasts', 'Salt/Pepper', '2 teaspoons parsley', '1-2 tablespoons olive oil', '¾ cup dry white wine, see notes', '4 cloves garlic, minced', '3 tablespoons butter', '3 tablespoons flour', '½ cup freshly grated Parmesan cheese', '1 tablespoon fresh lemon juice'],
+      instructions:  ['Combine the sauce ingredients in a large measuring cup with a spout and set aside. Measure out remaining ingredients before beginning.',
+        'Slice the chicken in half lengthwise to create 2-3 thinner slices. Cover with saran wrap and use the textured side of a meat mallet to pound it to ½ inch thick.',
+        'Season each side of the chicken with salt, pepper, and parsley.',
+        'Heat olive oil in a large skillet over medium-high heat. Sear the chicken in batches for 4-5 minutes per side, until a golden crust has developed. Set aside.',
+        'Turn the heat off. Add the wine and then set the heat to medium. Use a silicone spatula to clean the bottom and sides of the skillet, the “fond” will add more flavor to the sauce. Bring to a gentle bubble and reduce for 2 minutes. Add the garlic and cook for 2-3 more minutes, until the liquid has reduced by half.',
+        'Add the butter and flour and stir to combine. Cook for 1-2 minutes to cook off the raw flour taste.',
+        'Add the sauce mixture (from step 1) in small splashes, stirring continuously. Bring to a boil, then reduce to a simmer. Simmer and reduce for about 8 minutes.',
+        'Reduce heat to low and gradually sprinkle in the Parmesan cheese, stirring continuously. Stir in the lemon juice.',
+        'Add the chicken back and spoon the sauce on top. Heat through for 5 minutes or until the sauce has reached your desired thickness. Garnish with parsley and serve with mashed potatoes and roasted vegetables of choice!'
+      ]
+    },
+    'Chicken Alfredo Pasta': {
+      title: 'Chicken Alfredo Pasta',
+      image: 'img/dinner4_Chicken-Alfredo-Pasta-1.png',
+      ingredients:  ['3 tablespoons olive oil', '1 ½ pounds boneless skinless chicken breasts, pounded to an even thickness (4 average-sized breasts)', '1 to 2 teaspoons 21 Salute Seasoning or poultry seasoning', '1 teaspoon kosher salt, or to taste', '1 teaspoon freshly ground black pepper, or to taste', '½ cup white wine* or chicken broth, or as necessary', '3 tablespoons unsalted butter, or more if you want extra sauce', '1 tablespoon garlic, finely minced; or to taste', '2 teaspoons fresh parsley, optional for garnishing'],
+      instructions:  ['To a large skillet, add the olive oil, pounded chicken, evenly season with 21 Salute, salt, pepper, and cook over medium-high heat for 5 minutes. Do not touch, move, or disturb the chicken while it is searing. After 5 minutes, flip chicken over. It should have a medium golden color. For thicker/bigger chicken breasts, sear for 6-7 minutes.',
+        'Allow chicken to cook on the second side for about 5 minutes, or until done and cooked through. Again, do not disturb the chicken while it\'s searing.',
+        'Remove chicken with a slotted spatula and place it on a plate to rest.',
+        'Using caution, deglaze your skillet by adding wine (or broth) and allow the liquid to bubble up and steam violently for a few seconds.',
+        'Add the butter and allow it to melt, about 1 minute; stir continuously until melted.',
+        'Add the garlic and cook until fragrant, about 1 minutes; stir continuously.',
+        'Turn the heat off, add the chicken back into the skillet, flip it around in the garlic butter sauce, and spoon the sauce over the chicken.',
+        'Optionally garnish with parsley and serve immediately.'
+      ]
+    },
+    'Oven Baked Chicken Bite': {
+      title: 'Oven Baked Chicken Bite',
+      image: 'img/dinner5_Oven-Baked-Chicken-Bites-recipe-6.png',
+      ingredients: ['1 pound (450g) chicken breasts, skinless and boneless', ' tablespoon olive oil', '1 teaspoon salt', '2 tablespoons unsalted butter, diced', '1/4 teaspoon fresh ground pepper', '1/2 teaspoon paprika', '1/8 teaspoon cayenne pepper', '1/2 teaspoon garlic powder', '1/2 teaspoon onion powder', '1 teaspoon instant chicken stock, optional (lower the salt amount if using)', '1 teaspoon Italian seasoning', 'Fresh chopped parsley, for garnish'],
+      instructions:  ['To make the oven-baked chicken bites: Preheat your oven to 420°F  (220ºC) conventional. Cut chicken into 1-inch cubes.',
+        'In a small bowl, combine all seasonings (salt, pepper, paprika, cayenne pepper, garlic powder, onion powder, chicken stock, and Italian seasoning). Arrange chicken in a baking dish and sprinkle with the seasoning mix. Drizzle a tablespoon olive oil and toss chicken cubes with the seasoning to coat on all sides. Speck seasoned chicken with butter cubes.',
+        'Bake seasoned chicken in the preheated oven for 16-18 minutes, or until internal temperature reaches 165°F (75°C) using a meat thermometer. After 8-10 minutes, stir the chicken bites with a spoon for even baking. Once done, the chicken bites should be golden with crisp edges. For crispier chicken bites, switch to broil on high for the last 2 minutes of cooking until golden.',
+        'Remove the baking dish from the oven, sprinkle chicken with fresh chopped parsley, and let rest for 5 minutes before serving. Serve the oven-baked chicken bites over cauliflower rice with a good drizzle of the pan juices and a slice of lemon. Enjoy!'
+      ]
     }
+
+
   };
   // Add event listener to favorite items recipe.html
   favoriteList.addEventListener('click', function(event) {
