@@ -357,6 +357,57 @@ document.addEventListener('DOMContentLoaded', function() {
         'Bake seasoned chicken in the preheated oven for 16-18 minutes, or until internal temperature reaches 165°F (75°C) using a meat thermometer. After 8-10 minutes, stir the chicken bites with a spoon for even baking. Once done, the chicken bites should be golden with crisp edges. For crispier chicken bites, switch to broil on high for the last 2 minutes of cooking until golden.',
         'Remove the baking dish from the oven, sprinkle chicken with fresh chopped parsley, and let rest for 5 minutes before serving. Serve the oven-baked chicken bites over cauliflower rice with a good drizzle of the pan juices and a slice of lemon. Enjoy!'
       ]
+    },
+
+    //dessert.html
+    'Biko(Filipino Rice Cake)': {
+      title: 'Biko(Filipino Rice Cake)',
+      image: 'img/dessert_biko-recipe.png',
+      ingredients: ['2 cups glutinous rice - washed and drained', '1 cup canned coconut milk', '1 cup water', '2 pieces pandan leaves', '2 cups canned coconut milk - SEE NOTE 1', '1 cup dark brown sugar, packed', '1 teaspoon vanilla (optional)', 'vegetable or coconut oil - for greasing the pan'],
+      instructions:   ['vegetable or coconut oil: Generously grease an 8x8-inch square baking pan and set aside.',
+        '2 cups glutinous rice,1 cup canned coconut milk,1 cup water, 2 pieces pandan leaves: In a large pot over medium heat, mix 1 cup coconut milk and 1 cup water. Add the glutinous rice and pandan leaves. Bring to a simmer then turn heat to low and cover. Let it cook until all liquids are absorbed. The rice should only be almost cooked at this point, not fully cook or the biko will be mushy. They should be softer but has not fully expanded and it is ok to see some grains are still \'\'chalky\'\' at the center. If it is too undercooked, you can add a bit more water (start with ¼ cup) pour along the edges.',
+        '2 cups canned coconut milk,1 cup dark brown sugar, packed,1 teaspoon vanilla: While waiting, prepare the latik syrup by combining the 2 cups coconut milk and 1 cup dark brown sugar in a large pan. You can add the vanilla extract if desired. (I do). Cook over medium heat while constantly stirring. Cook it until the liquid is reduced into a thick syrup, the color should also have darkened into deep brown caramel. Reduce the heat to very low at this point.',
+        'Scoop and reserve ½ cup of the latik syrup for the topping later. Add the cooked rice (without the pandan leaves) to the pan with the remaining latik syrup. Gently fold the sticky rice and the syrup until completely coated. Cook while stirring occasionally, until the rice completely absorbs the syrup, but it shold still be not mushy. The individual grains should still be visible and it is ok to see some of the grains having a bit of white parts at this point as it will continue to cook and expand in the oven.',
+        'Transfer the rice into the greased pan and spread out evenly. Pour the reserved latik syrup on spread evenly on top of the rice. Bake in a preheated oven at 350°F/180°C for 20-30 minutes or until the latik is reduced and becomes bubbly.',
+        'Remove from oven and let it cool down. Cut into squares and serve.'
+      ]
+    },
+    'Cheesecake Crescent Rolls Casserole': {
+      title: 'Cheesecake Crescent Rolls Casserole',
+      image: 'img/dessert_Cheesecake-Crescent-Rolls-Casserole-1.png',
+      ingredients: ['2 cans of refrigerated crescent roll dough', '2 8 ounce blocks of cream cheese, softened to room temperature', '1 cup of granulated sugar', '1 teaspoon of vanilla extract', '1/4 cup of melted butter', '1 tablespoon of ground cinnamon', '2 tablespoons of granulated sugar'],
+      instructions:    ['Preheat the oven to 350°F (175°C). Grease a 9×13-inch baking dish to ensure the casserole does not stick.',
+        'Unroll one can of crescent roll dough and spread it evenly across the bottom of the prepared baking dish. Press the seams together to create a uniform layer.',
+        'In a large mixing bowl, beat the softened cream cheese together with 1 cup of granulated sugar and the vanilla extract. Mix until the ingredients are smooth and well combined.',
+        'Evenly distribute the cream cheese mixture over the layer of crescent roll dough in the baking dish, ensuring a consistent layer.',
+        'Unroll the second can of crescent roll dough and carefully place it over the cream cheese layer. Press the seams together to create a smooth top layer.',
+        'Brush the melted butter evenly over the top layer of crescent roll dough. In a small bowl, combine the ground cinnamon and the remaining 2 tablespoons of granulated sugar. Sprinkle this mixture generously over the buttered dough.',
+        'Place the baking dish in the preheated oven and bake for 30 minutes, or until the top is crisp and golden brown.',
+        'Allow the casserole to cool for at least 20 minutes before slicing it into squares and serving. Optionally, drizzle with honey for added sweetness.'
+        ]
+    },
+    'Chocolate Tiramisu': {
+      title: 'Chocolate Tiramisu',
+      image: 'img/dessert_chocolate-tiramisu-7.png',
+      ingredients: ['1 cup heavy cream', '7 oz dark chocolate, finely chopped', '4 egg yolks', '1 cup granulated sugar', '1 tbsp rum', '18 oz mascarpone cheese, at room temperature', '2 cups heavy cream', '1 1⁄2 cups strong brewed coffee or espresso, warm', '1 tbsp granulated sugar', '1 tbsp cocoa powder'],
+      instructions:    ['Make the ganache: Heat the cream in a saucepan until just boiling. Pour over the chopped chocolate in a bowl. Let sit for 5 minutes, then stir until smooth. Set aside to cool slightly.',
+        'Make the mascarpone cream: Whisk the egg yolks, sugar, and rum until pale and fluffy. Beat in the mascarpone until smooth. In a separate bowl, whip the heavy cream to stiff peaks. Gently fold the whipped cream into the mascarpone mixture until combined.',
+        'Make the coffee soak. Sift the cocoa powder into a shallow bowl. Stir in the sugar and coffee until dissolved.',
+        'Assemble the tiramisu: Spread a thin layer of ganache in an 8×8-inch dish. Quickly dip each ladyfinger in the coffee soak and arrange them in the dish. Spread 1/3 of the mascarpone cream on top. Drizzle with ganache. Repeat the layers, ending with mascarpone. Dust with cocoa powder.',
+        'Chill the tiramisu for at least 2 hours or overnight before serving. It keeps well for up to 3 days in the fridge.'
+        ]
+    },
+    'Filipino Banana Cue': {
+      title: 'Filipino Banana Cue',
+      image: 'img/dessert_filipino-Banana-Cue-sweet-simple-vegan.png',
+      ingredients: ['1 bunch saba bananas (about 7-10; see notes)', '1/2 cup light brown sugar', 'Canola oil'],
+      instructions:   ['Heat 1 1/2 to 2 inches of oil in a pan or wok on medium-low heat. You don’t want too much oil, just enough to cover about half of the banana. ',
+        'Gently peel bananas but keep them whole. Set aside.',
+        'Once the oil is warm, liberally sprinkle in half of brown sugar and wait until the sugar starts to caramelize.',
+        'Carefully add the bananas into the hot oil on top of the caramelized brown sugar and begin to fry. After about a minute, start turning the bananas. Sprinkle a little bit of sugar on top of the bananas and in the surrounding oil and fry for about a minute more. Turn again continue with this process until you have added all of the brown sugar. Then, continue to turn every minute or two, so that they fry evenly. The goal here is to cook the bananas until they are golden and completely coated in the caramel. The cooking time will vary depending on the size of your bananas, but ours usually take about 8-10 minutes total.',
+        'Once finished, shake off any excess oil and place the banana cue onto a clean plate or cooling rack to cool. You can stand them up in a colander to drain a bit as well. We suggest not placing it on paper towels as it may stick.',
+        'Once it is cool enough to eat and handle, you can eat them as is or skewer 1-2 of them onto some barbecue sticks. Dig in and enjoy! '
+        ]
     }
 
 
@@ -409,17 +460,40 @@ document.querySelectorAll('.stars').forEach(stars => {
   
 
   //star rating
-  function setRating(item, rating) {
-	const stars = document.querySelectorAll(`.stars[data-item="${item}"] .star`);
-	
-	stars.forEach(star => {
-	  const starRating = parseFloat(star.getAttribute('data-rating'));
-	  star.classList.toggle('selected', starRating <= rating);
-	});
-  }
-  
-  function displayRating(item, rating) {
-	document.getElementById(`rating-${item}`).textContent = `Rating: ${rating}`;
+  const stars = document.querySelectorAll('.stars');
+
+  stars.forEach(starContainer => {
+    const itemId = starContainer.getAttribute('data-item');
+    const ratingValueElement = document.getElementById(`rating-${itemId}`);
+
+    starContainer.addEventListener('click', function(event) {
+      if (event.target.classList.contains('star')) {
+        const rating = event.target.getAttribute('data-rating');
+        localStorage.setItem(`rating-${itemId}`, rating);
+        ratingValueElement.textContent = `Rating: ${rating}`;
+        updateStars(starContainer, rating);
+      }
+    });
+
+    // Load the saved rating from local storage
+    const savedRating = localStorage.getItem(`rating-${itemId}`);
+    if (savedRating) {
+      ratingValueElement.textContent = `Rating: ${savedRating}`;
+      updateStars(starContainer, savedRating);
+    }else {
+      ratingValueElement.textContent = 'Rating: 0'; // Remove the text if no rating is saved
+    }
+  });
+
+  function updateStars(starContainer, rating) {
+    const stars = starContainer.querySelectorAll('.star');
+    stars.forEach(star => {
+      if (star.getAttribute('data-rating') <= rating) {
+        star.style.color = 'gold'; // Highlight the star
+      } else {
+        star.style.color = 'black'; // Reset the star color
+      }
+    });
   }
   
 
@@ -448,6 +522,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   // Clear form fields
   document.getElementById("contactForm").reset();
 });
+
 
 
 //add alert
