@@ -20,6 +20,64 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <style>
+             /* Custom CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .about-header h1 {
+            font-size: 4rem; /* Make it larger */
+            color: #ff6600; /* Orange color */
+            letter-spacing: 2px; /* Add spacing between letters */
+        }
+
+        .about-header {
+            background: url(img/tableFood.png) no-repeat center center/cover;
+            height: 55vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+
+        .about-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(59, 59, 59, 0.377);
+        }
+
+        .about-header h1 {
+            position: relative;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .about-section {
+            padding: 3rem 1rem;
+            
+        }
+
+        .about-section h2 {
+            font-family: 'Georgia', serif;
+            color: #ff6600;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #ff6600;
+            font-weight: bold;
+        }
+        </style>
     </head>
 
     <body>
@@ -42,7 +100,7 @@
                         <li class="nav-item dropdown ps-4 pt-2" onmouseover="this.querySelector('.dropdown-menu').classList.add('show')" onmouseout="this.querySelector('.dropdown-menu').classList.remove('show')">
                             <a class="nav-link dropdown-toggler" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes<i class="fa-solid fa-caret-down ps-2"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="recipe.html">All Recipes</a></li>
+                                <li><a class="dropdown-item" href="recipe.html">Recipes</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -76,10 +134,17 @@
 
 
 
-<div class="custom-container text-center py-5">
-    <h1>About FoodRep</h1>
-    <p style="font-size: 1.1rem;">Welcome to <span class="text-foodrep">FoodRep</span>, a meal planning and recipe management website developed as part of our school project! We're a team of students passionate about healthy eating, technology, and innovative solutions. Through this project, we aim to create an intuitive, user-friendly platform that makes meal planning easy, fun, and accessible for everyone.</p>    
-</div>
+<header class="about-header">
+    <h1>Welcome to FoodRep</h1>
+</header>
+
+<!-- About Section -->
+<section class="about-section container text-center">
+    <h2>About FoodRep</h2>
+    <p>
+        Welcome to <span class="highlight">FoodRep</span>, a meal planning and recipe management website developed as part of our school project! We're a team of students passionate about healthy eating, technology, and innovative solutions. Through this project, we aim to create an intuitive, user-friendly platform that makes meal planning easy, fun, and accessible for everyone.
+    </p>
+</section>
 
 
 <div class="container-fluid py-5 hero-header mb-5">

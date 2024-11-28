@@ -525,6 +525,28 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
 
 
+function showRecipeDetails(title, imageSrc, ingredients, instructions) {
+  document.getElementById('recipeTitle').innerText = title;
+  document.getElementById('recipeImage').src = imageSrc;
+  
+
+  const ingredientsList = document.getElementById('recipeIngredients');
+  ingredientsList.innerHTML = '';
+  ingredients.forEach(ingredient => {
+    const li = document.createElement('li');
+    li.innerText = ingredient;
+    ingredientsList.appendChild(li);
+  });
+
+  const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+  instructionsList.innerHTML = '';
+  instructions.forEach(instruction => {
+    const li = document.createElement('li');
+    li.innerText = instruction;
+    instructionsList.appendChild(li);
+  });
+}
+
 //add alert
   });
   
