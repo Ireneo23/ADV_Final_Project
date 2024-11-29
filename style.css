@@ -8,6 +8,7 @@
 @import 'animate.css';
 
 
+/*Scroll effect*/
 @keyframes appear{
   from{
     opacity: 0;
@@ -18,6 +19,7 @@
     scale: 1;
   }
 }
+
 
 .scroll-animation{
     animation: appear linear;
@@ -425,8 +427,8 @@ footer .footer-end a:hover{
 }
 
 .team .team_box .profile{
-  width: 240px;
-  height: 240px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   margin: 0 15px;
   display: flex;
@@ -436,20 +438,16 @@ footer .footer-end a:hover{
   box-shadow: 0 0 8px rgba(0,0,0,0.5);
   transition: 0.4s;
 }
-@media screen and (max-width: 768px) {
-  .team .team_box .profile {
-    margin: 0 auto; /* Center the profile box horizontally */
-  }
-}
+
 
 .team .team_box .profile:hover{
   border-radius: 18px;
-  height: 240px;
+  height: 270px;
 }
 
 .team .team_box .profile img{
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -467,17 +465,16 @@ footer .footer-end a:hover{
 .team .team_box .profile .info{
   position: absolute;
   text-align: center;
-  top: 25%;
+  top: 30%;
   transition: 0.4s; 
 }
 
 .team .team_box .profile:hover .info{
-  top: 44%;
+  top: 50%;
 }
 
 .team .team_box .profile .info .name{
   color: #FF7F50;
-  margin-bottom: 15px;
 }
 
 .team .team_box .profile .info .bio{
@@ -486,13 +483,14 @@ footer .footer-end a:hover{
   margin: 0 auto 10px auto;
 }
 
-.team .team_box .profile .info .team_icon i{
-  margin: 10px 5px 5px 0;
+.team .team_box .profile .info .team_icon .fa-brands{
+  margin: 0px 5px 5px 0;
   cursor: pointer;
   transition: 0.3s;
+  color: #181818;
 }
 
-.team .team_box .profile .info .team_icon i:hover{
+.team .team_box .profile .info .team_icon .fa-brands:hover{
   color: #FF7F50;
 }
 .team-col{
@@ -595,31 +593,6 @@ footer .footer-end a:hover{
 .custom-container h1{
   padding-top: 100px;
 }
-
-@media (min-width: 576px) {
-  .custom-container {
-      max-width: 540px; /* Adjust width for small devices */
-  }
-}
-
-@media (min-width: 768px) {
-  .custom-container {
-      max-width: 700px; /* Adjust width for medium devices */
-  }
-}
-
-@media (min-width: 992px) {
-  .custom-container {
-      max-width: 700px; /* Adjust width for large devices */
-  }
-}
-
-@media (min-width: 1200px) {
-  .custom-container {
-      max-width: 700px; /* Adjust width for extra large devices */
-  }
-}
-
 
 
 
@@ -846,21 +819,6 @@ footer .footer-end a:hover{
   background-color: #FF7F50;
 }
 
-@media (max-width: 768px) {
-  .bg-lunch {
-    height: 50vh;
-  }
-
-  .bg-lunch h1 {
-    font-size: 2.5rem;
-  }
-
-  .bg-lunch .btn {
-    bottom: 15px; /* Adjust for smaller screens */
-    right: 15px; /* Adjust for smaller screens */
-  }
-}
-
 /*dinner*/
 .bg-dinner {
   background: url(img/bgdinner.png) no-repeat center center/cover;
@@ -878,7 +836,16 @@ footer .footer-end a:hover{
   background-color: #FF7F50;
 }
 
-@media (max-width: 768px) {
+/*media*/
+@media (min-width: 576px) {
+  .custom-container {
+      max-width: 540px; /* Adjust width for small devices */
+  }
+}
+@media screen and (max-width: 768px) {
+  .team .team_box .profile {
+    margin: 0 auto; /* Center the profile box horizontally */
+  }
   .bg-dinner {
     height: 50vh;
   }
@@ -890,6 +857,33 @@ footer .footer-end a:hover{
   .bg-dinner .btn {
     bottom: 15px; /* Adjust for smaller screens */
     right: 15px; /* Adjust for smaller screens */
+  }
+  .bg-lunch {
+    height: 50vh;
+  }
+
+  .bg-lunch h1 {
+    font-size: 2.5rem;
+  }
+
+  .bg-lunch .btn {
+    bottom: 15px; /* Adjust for smaller screens */
+    right: 15px; /* Adjust for smaller screens */
+  }
+  .custom-container {
+    max-width: 700px; /* Adjust width for medium devices */
+}
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+      max-width: 700px; /* Adjust width for large devices */
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-container {
+      max-width: 700px; /* Adjust width for extra large devices */
   }
 }
 
