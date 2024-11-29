@@ -10,6 +10,7 @@
 * body{
   background-color: #ebf0f1;
   animation: transitionIn 0.80s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -601,51 +602,7 @@ footer .footer-end a:hover{
   }
 }
 
-.about{
-  width: 100%;
-  padding: 78px 0;
-  background-color: #CFE8EF;
 
-}
-.about img{
-  height: auto;
-  width: 420px;
-}
-
-.about-text{
-  width: 550px;
-}
-
-.main{
-  width: 1130px;
-  max-width: 95%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.about-img {
-  box-shadow: 0 0 8px rgba(0,0,0,0.5);
-  border-radius: 12px;
- 
-}
-
-.about-text h2{
-  color: #FF7F50;
-  font-size: 50px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-
-}
-.about-text h5{
-  color: #181818;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  letter-spacing: 2px;
-  
-}
 
 
 /*Rating*/
@@ -708,6 +665,103 @@ footer .footer-end a:hover{
 /*about us*/
 
 
+.about-header h1 {
+  font-size: 4rem; /* Make it larger */
+  color: white; /* Orange color */
+  letter-spacing: 2px; /* Add spacing between letters */
+}
 
+.about-header {
+  background: url(img/tableFood.png) no-repeat center center/cover;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.about-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(59, 59, 59, 0.377);
+}
+
+.about-header h1 {
+  position: relative;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.about-section {
+  padding-top: 3rem;
+  
+}
+
+.about-section h2 {
+  font-family: 'Georgia', serif;
+  color: #ff6600;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.testimonial-section .quote {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
+/* About Section */
+.about-section .title {
+  font-size: 3rem;
+  font-weight: 550;
+  color: #E96419;
+}
+
+.about-section .description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+.about-section .btn-pink {
+  background-color: #E96419;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.about-section .btn-pink:hover {
+  background-color: #b84706;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section .title {
+    font-size: 1.8rem;
+  }
+
+  .about-section .description {
+    font-size: 1rem;
+  }
+
+  .about-section .details {
+    font-size: 0.9rem;
+  }
+}
 
 

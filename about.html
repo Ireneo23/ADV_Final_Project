@@ -20,64 +20,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <style>
-             /* Custom CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .about-header h1 {
-            font-size: 4rem; /* Make it larger */
-            color: #ff6600; /* Orange color */
-            letter-spacing: 2px; /* Add spacing between letters */
-        }
-
-        .about-header {
-            background: url(img/tableFood.png) no-repeat center center/cover;
-            height: 55vh;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-
-        .about-header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(59, 59, 59, 0.377);
-        }
-
-        .about-header h1 {
-            position: relative;
-            font-size: 3rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        .about-section {
-            padding: 3rem 1rem;
-            
-        }
-
-        .about-section h2 {
-            font-family: 'Georgia', serif;
-            color: #ff6600;
-        }
-
-        .about-section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        .highlight {
-            color: #ff6600;
-            font-weight: bold;
-        }
-        </style>
+       
     </head>
 
     <body>
@@ -139,37 +82,34 @@
 </header>
 
 <!-- About Section -->
-<section class="about-section container text-center">
-    <h2>About FoodRep</h2>
-    <p>
-        Welcome to <span class="highlight">FoodRep</span>, a meal planning and recipe management website developed as part of our school project! We're a team of students passionate about healthy eating, technology, and innovative solutions. Through this project, we aim to create an intuitive, user-friendly platform that makes meal planning easy, fun, and accessible for everyone.
-    </p>
-</section>
 
+<section class="testimonial-section text-center py-5 px-5" style="background-color: #FADADD;">
+    <div class="container">
+      <p class="quote mb-4">Welcome to <span class="highlight">FoodRep</span>, a meal planning and recipe management website developed as part of our school project! We're a team of students passionate about healthy eating, technology, and innovative solutions. Through this project, we aim to create an intuitive, user-friendly platform that makes meal planning easy, fun, and accessible for everyone.</p>
+    
+    </div>
+  </section>
 
-<div class="container-fluid py-5 hero-header mb-5">
-    <h5 class="text-center">Team Members</h5>
-    <div class="container my-5 py-5">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-            <img class="about-img" src="img/ireneo.png" alt="ireneo">
+  <!-- About Section -->
+  <section class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Image Section -->
+        <div class="col-md-6">
+          <img src="img/ireneo.png" alt="Wellness Coach" class="img-fluid rounded">
         </div>
-        <div class="col-lg-6 text-center text-lg-start">
-            <h2>Ireneo Sario Madohinog III</h2>
-            <h5>Developer</h5>
-            <p>I am a front-end developer and the leader of our team, currently pursuing a Bachelor of Science in Information Technology at Guerrero Street, Davao City. As the youngest in my family, I was one of the key contributors to the concept of this project, which I dedicate to my late mother.</p>
-            <p>Her work as a chef at a renowned restaurant in Panabo City deeply inspired and influenced me.</p>
-            <a href="contact.html" class="btn draw-border py-sm-3 px-sm-5 sliderInLeft">Lets Talk</a>
+        <!-- Text Section -->
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="title mb-3">HI! I'M IRENEO</h1>
+          <p class="description mb-4">I am a front-end developer and the leader of our team, currently pursuing a Bachelor of Science in Information Technology at Guerrero Street, Davao City. As the youngest in my family, I was one of the key contributors to the concept of this project, which I dedicate to my late mother. Her work as a chef at a renowned restaurant in Panabo City deeply inspired and influenced me.</p>
+         
+          <a href="#" class="btn btn-pink">Contact Me</a>
         </div>
       </div>
-    </div>   
-  </div>
-
+    </div>
+  </section>
 
 <!--Dria taman-->
-
-
-
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasFavorites" aria-labelledby="offcanvasFavoritesLabel">
         <div class="offcanvas-header">
