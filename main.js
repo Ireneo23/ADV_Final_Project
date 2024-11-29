@@ -547,6 +547,7 @@ function showRecipeDetails(title, imageSrc, ingredients, instructions) {
   });
 }
 
-//add alert
+//scroll effect
+
   });
   

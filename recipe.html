@@ -73,7 +73,7 @@
     </nav>
        <!--firs row-->
 
-       <div class="container-xxl" style="padding: 150px;">
+       <div class="container-xxl py-5 scroll-animation">
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-6 hover-opacity">
@@ -82,7 +82,7 @@
                       <img class="img-fluid rounded w-100 shadow-effect" src="img/champorado.png" alt="image" >
                   </div>
                   <div class="col-6 text-start">
-                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 25%;" src="img/breakfast1.png" alt="image">
+                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 20%;" src="img/breakfast1.png" alt="image">
                   </div>
                   <div class="col-6 text-end">
                     <img class="img-fluid rounded w-75 shadow-effect"  src="img/omelette.png" alt="image">
@@ -93,17 +93,13 @@
               </div>
             </div>
             <!--Images-end-->
-            <div class="col-lg-6 bg-white p-3 rounded custom-shadow">
+            <div class="col-lg-6 bg-white p-3 rounded custom-shadow d-flex flex-column justify-content-end align-items-end" style="height: 100%;">
+              
               <!--About-section-->
-              <h1 class="mb-4">Welcome to
-                <img class="logo-image" src="img/projectlogo.svg" height="80" width="100" alt="logo">
-              <span class="text-orange">Food</span>
-              <span class="text-black">Rep</span>
-          </h1> 
-          <p class="mb-4 fs-2" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">
-            Delicious and Sacculent <span style="color: #FF7f50;">breakfast</span> You Will Have
-          </p> 
-            <a href="breakfast.html" class="btn draw-border py-3 px-5 mt-2">breakfast recipes</a>
+              
+              <h1 class="mb-4">Welcome to <img class="logo-image" src="img/projectlogo.svg" height="80" width="100" alt="logo"><span class="text-orange">Food</span><span class="text-black">Rep</span></h1> 
+          <p class="text-center mt-4 fs-3 w-100" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">Delicious and Succulent <span class="text-orange">Breakfast</span>You Will Have</p> 
+          <a href="breakfast.html" class="btn btn-recipe mt-auto">Read More</a>
           </div>
           </div>
         </div>          
@@ -111,7 +107,7 @@
 
       
     <div class="container mt-5">
-      <div id="recipe-list" class="row">
+      <div id="recipe-list" class="row scroll-animation">
         <div class="col-md-3 card-rep">
           <div class="card">
             <img src="img/lunch2.png" class="card-img-top" alt="Recipe 1" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pork Tocino', 'img/lunch2.png', ['500g/ 1 lb of Chicken Meat', '20 slices white sandwich bread', 'Sour cream', 'Walnuts Best substitute – cashews, macadamia nuts or pecans. Else, leave it out.', 'Fresh dill', 'Pickles', '1 Celery and 1 green onion ', 'garlic, salt, pepper', 'Lemon juice ', 'Dijon mustard'], 
@@ -268,50 +264,12 @@
         </div>
       </div> <!--first row end-->
 
-      <div class="container" style="border-radius: 8px; padding: 2rem;">
-        <div class="row g-3">
-          <p class="text-center fs-3" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">Eat a Healthy <span style="color: #FF7f50;" class="fs-1">Lunch</span> Every Day</p>
-          <div class="col-lg-6 hover-opacity">
-            <div class="row g-3  custom-img">
-                <div class="col-6 text-start">
-                    <img class="img-fluid rounded w-100 shadow-effect" src="img/champorado.png" alt="image" >
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-75 shadow-effect" style="margin-top: 25%;" src="img/breakfast1.png" alt="image">
-                </div>
-                <div class="col-6 text-end">
-                  <img class="img-fluid rounded w-75 shadow-effect"  src="img/omelette.png" alt="image">
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-100 shadow-effect" src="img/toast.png" alt="image" >
-              </div>  
-            </div>
-          </div>
-          <div class="col-lg-6 hover-opacity ">
-            <div class="row g-3  custom-img">
-                <div class="col-6 text-start">
-                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-left: 25%; margin-top: 25%;" src="img/champorado.png" alt="image" >
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-100 shadow-effect" src="img/breakfast1.png" alt="image">
-                </div>
-                <div class="col-6 text-end">
-                  <img class="img-fluid rounded w-100 shadow-effect"  src="img/omelette.png" alt="image">
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
-                  <a href="breakfast.html" class="btn draw-border mt-3 w-75">Lunch</a> 
-                  
-              </div> 
-              
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="bg-lunch rounded scroll-animation">
+        <h1> Eat a Healthy <span class="text-orange">Lunch</span> Every Day</h1>
+        <a href="lunch.html" class="btn btn-recipe">Lunch</a>
+       </div>
 
-
-
-      <div id="recipe-list" class="row"> <!--second row-->
+      <div id="recipe-list" class="row scroll-animation"> <!--second row-->
         <div class="col-md-3">
           <div class="card">
             <img src="img/pork.png" class="card-img-top" alt="Recipe 5" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pork Tocino', 'img/pork.png', ['2 pounds pork butt, sliced to ¼-inch thick', '1 cup sugar', '1 tablespoon salt', '1 tablespoon garlic powder', '¼ teaspoon pepper', '2 drops red food coloring', '1 cup water', '2 tablespoons canola oil'], 
@@ -464,56 +422,14 @@
         </div><!--second row end-->
       </div> 
 
-
-
-      <div class="container" style="border-radius: 8px; padding: 2rem;">
-        <div class="row g-3 text-center">
-          <div class="col-lg-6 hover-opacity">
-            <p class="text-center mt-4 fs-3 w-100" style="font-family:Lobster, sans-serif; color: rgb(79, 78, 78);">Always Choose <span style="color: #FF7f50;" class="fs-1">Dinner</span> Time With Your Favorite Recipes</p>
-
-            <div class="row d-flex justify-content-center custom-img">
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-100 shadow-effect" style="margin-top: 25%; margin-left: 15%;" src="img/breakfast1.png" alt="image"> 
-                  </div>
-                  <div class="col-6 text-center">
-                    <div class="row">
-                      <div class="col text-start text-center">
-                        <img class="img-fluid rounded w-75 shadow-effect" style="margin-bottom: 6%;" src="img/toast.png" alt="image" >
-                        <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
-                    </div>  
-    
-                    </div>
-                  </div>
-                  
-                
-                
-            </div>
-          </div>
-          <div class="col-lg-6 hover-opacity ">
-            <div class="row g-3  custom-img">
-                <div class="col-6 text-start">
-                    <img class="img-fluid rounded w-75 shadow-effect" style="margin-left: 25%; margin-top: 25%;" src="img/champorado.png" alt="image" >
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-100 shadow-effect" src="img/breakfast1.png" alt="image">
-                </div>
-                <div class="col-6 text-end">
-                  <img class="img-fluid rounded w-100 shadow-effect"  src="img/omelette.png" alt="image">
-                </div>
-                <div class="col-6 text-start">
-                  <img class="img-fluid rounded w-75 shadow-effect" src="img/toast.png" alt="image" >
-                  <a href="dinner.html" class="btn draw-border mt-3 w-75">Dinner</a> 
-                  
-              </div> 
-              
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="bg-dinner rounded scroll-animation">
+        <h1> Always Choose <span class="text-orange">Dinner</span> Time With Your Favorite Recipes</h1>
+        <a href="dinner.html" class="btn btn-recipe">Dinner</a>
+       </div>
 
 
 
-      <div id="recipe-list" class="row"> <!--third row-->
+      <div id="recipe-list" class="row scroll-animation"> <!--third row-->
         <div class="col-md-3">
           <div class="card">
             <img src="img/omelette.png" class="card-img-top" alt="Recipe 9" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Masala omelette', 'img/omelette.png', ['2 eggs', '¼ cup onion ', '¼ cup tomato', '½ fresh green chili eg serano, or more to taste', '1 tablespoon cilantro coriander (chopped volume)', '⅛ teaspoon turmeric', '⅛ teaspoon chili powder', '1 tablespoon vegetable oil or other neutral oil'], 
@@ -662,7 +578,7 @@
       </div> <!--third row end-->
     </div>
 
-    <footer class="container-fluid text-lg-start mt-5 justify-content-center bg-white rounded">
+    <footer class="container-fluid text-lg-start mt-5 justify-content-center bg-white rounded scroll-animation">
       <div class="container p-4">
         <div class="row g-4 mb-4">
           <div class="col-lg-4 col-md-6 mt-5 text-center footer-logo">
