@@ -339,7 +339,7 @@ footer .footer-end a:hover{
 
 .offcanvas-body {
   padding: 1.5rem;
-  background-image: url(img/backgroundcanva.png);
+
 }
 
 .offcanvas-end {
@@ -352,7 +352,6 @@ footer .footer-end a:hover{
 }
 .modal-body {
   text-align: left;
-  background-image: url(img/backgroundcanva.png);
 }
 
 .social-icon {
@@ -887,3 +886,27 @@ footer .footer-end a:hover{
   }
 }
 
+/*services*/
+.description {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.description.show {
+  display: block;
+  opacity: 1;
+}
+
+.read-more-btn{
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  background-color: #E96419;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+
+}
+
+.read-more-btn:hover{
+  background-color: #FF7F50;
+}

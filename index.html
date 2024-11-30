@@ -20,7 +20,9 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+        <style>
+         
+        </style>
     </head>
 
     <body>
@@ -102,34 +104,41 @@
                     <div class="card-body">
                       <i class="fa fa-3x fa-user-tie mb-4" id="quality"></i>
                       <h5 class="mt-3">Master Chefs</h5>
-                      <p>Chefs are the creative force behind exceptional dining experiences, blending skill, passion, and innovation to transform ingredients into flavorful works of art. With a deep understanding of culinary techniques and flavors, they craft dishes that delight the senses and bring people together around the table. Whether in a bustling kitchen or a quiet corner bistro, chefs play a vital role in shaping food culture and creating memorable moments through their cuisine.</p>
+                      <p class="description" style="display: none;">Chefs are the creative force behind exceptional dining experiences, blending skill, passion, and innovation to transform ingredients into flavorful works of art. With a deep understanding of culinary techniques and flavors, they craft dishes that delight the senses and bring people together around the table. Whether in a bustling kitchen or a quiet corner bistro, chefs play a vital role in shaping food culture and creating memorable moments through their cuisine.</p>
+                      <button class="read-more-btn">Read More</button>
                     </div>
                   </div>
                 </div>
+                <!--second-->
                 <div class="col-lg-3 col-sm-6">
                   <div class="card">
                     <div class="card-body">
                       <i class="fa fa-3x fa-utensils mb-4" id="quality"></i>
                       <h5 class="mt-3">Food Quality</h5>
-                      <p>Food quality refers to the attributes and characteristics of food that determine its value and acceptability to consumers. It encompasses factors such as taste, texture, appearance, freshness, and nutritional content, ensuring that food is not only safe to eat but also enjoyable and nutritious. Maintaining high food quality is crucial in meeting consumer expectations, promoting health, and adhering to regulatory standards, making it a key focus in the food industry.</p>
+                      <p class="description" style="display: none;">Food quality refers to the attributes and characteristics of food that determine its value and acceptability to consumers. It encompasses factors such as taste, texture, appearance, freshness, and nutritional content, ensuring that food is not only safe to eat but also enjoyable and nutritious. Maintaining high food quality is crucial in meeting consumer expectations, promoting health, and adhering to regulatory standards, making it a key focus in the food industry.</p>
+                      <button class="read-more-btn">Read More</button>
                     </div>
                   </div>
                 </div>
+                <!--third-->
                 <div class="col-lg-3 col-sm-6">
                   <div class="card">
                     <div class="card-body">
                       <i class="fa fa-3x fa-headset mb-4" id="quality"></i>
                       <h5 class="mt-3">Contact</h5>
-                      <p>For any inquiries, feedback, or assistance, we encourage you to reach out to us. Whether you have a question, a suggestion, or need support, our team is here to help. Please feel free to contact us through the provided channels, and we'll ensure a prompt and helpful response.</p>
+                      <p class="description" style="display: none;">For any inquiries, feedback, or assistance, we encourage you to reach out to us. Whether you have a question, a suggestion, or need support, our team is here to help. Please feel free to contact us through the provided channels, and we'll ensure a prompt and helpful response.</p>
+                      <button class="read-more-btn">Read More</button>
                     </div>
                   </div>
                 </div>
+                <!--forth-->
                 <div class="col-lg-3 col-sm-6">
                   <div class="card">
                     <div class="card-body">
-                      <i class="fa fa-3x fa-list-check mb-4" id="quality"></i>
+                      <i class="fa fa-3x fa-headset mb-4" id="quality"></i>
                       <h5 class="mt-3">Favorite Management</h5>
-                      <p>The Favorites Management feature of FoodRep allows users to easily save and access their favorite recipes. By simply clicking an "Add to Favorites" button, users can store their preferred recipes in the browser's local storage, ensuring they remain available even after the session ends. This convenient feature helps users quickly retrieve their go-to meals without needing to search for them again, enhancing the overall user experience with personalized recipe collections.</p>
+                      <p class="description" style="display: none;">The Favorites Management feature of FoodRep allows users to easily save and access their favorite recipes. By simply clicking an "Add to Favorites" button, users can store their preferred recipes in the browser's local storage, ensuring they remain available even after the session ends. This convenient feature helps users quickly retrieve their go-to meals without needing to search for them again, enhancing the overall user experience with personalized recipe collections.</p>
+                      <button class="read-more-btn">Read More</button>
                     </div>
                   </div>
                 </div>
@@ -189,7 +198,7 @@
 
 
                 <div class="tab-class text-center">
-                  <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                  <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 gap-3">
                     <li class="nav-item me-2">
                       <a href="breakfast.html" class="d-flex align-items-center text-start mx-2 p-2  custom-shadow">
                         <i class="fa fa-mug-hot fa-2x" id="quality"></i>
@@ -214,6 +223,16 @@
                           <div class="ps-3">
                             <small class="text-body-secondary fw-bolder">Special</small>
                             <h6 class="fw-bold ">Dinner</h6>
+                          </div>
+                    </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="dessert.html" class="d-flex align-items-center text-start mx-2 p-2  custom-shadow">
+                        <i class="fa-solid fa-bread-slice fa-2x" id="quality"></i>
+                          <div class="ps-3">
+                            <small class="text-body-secondary fw-bolder">Special</small>
+                            <h6 class="fw-bold ">Dessert</h6>
                           </div>
                     </a>
                     </li>
@@ -752,7 +771,36 @@
                       </div>
                   </div>
               </div>
-
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const buttons = document.querySelectorAll('.read-more-btn');
+                  
+                  buttons.forEach(button => {
+                    button.addEventListener('click', function() {
+                      const description = this.previousElementSibling;
+                      
+                      if (description.classList.contains('show')) {
+                        description.classList.remove('show');
+                        this.textContent = 'Read More';
+                       
+                        setTimeout(() => {
+                          description.style.display = 'none';
+                       
+                        }, 200); // Match this with the CSS transition duration
+                      } else {
+                        description.style.display = 'block';
+                        
+                        this.textContent = 'Read Less';
+                        setTimeout(() => {
+                          description.classList.add('show');
+                          
+                        }, 10); // Small delay to ensure display is set before opacity transition
+                      }
+                    });
+                  });
+                });
+              </script>
+              
 
               <script>
                   function showRecipeDetails(title, imageSrc, ingredients, instructions) {
