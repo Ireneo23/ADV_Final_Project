@@ -30,23 +30,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update the favorite list and display count
     function updateFavoritesList() {
       favoritesList.innerHTML = '';
-  
+    
       favoriteRecipes.forEach((recipe, index) => {
         const favoriteItem = document.createElement('li');
         favoriteItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
         favoriteItem.textContent = recipe;
-  
+    
         // Create delete icon with orange trash icon
         const deleteBtn = document.createElement('span');
         deleteBtn.innerHTML = '<i class="fas fa-trash-alt delete-btn" style="color: dark;"></i>';
         deleteBtn.addEventListener('click', () => {
-          deleteFavorite(index);
+          // Add confirmation dialog
+          const confirmDelete = confirm('Are you sure you want to delete this recipe?');
+          if (confirmDelete) {
+            deleteFavorite(index);
+          }
         });
-  
+    
         favoriteItem.appendChild(deleteBtn);
         favoritesList.appendChild(favoriteItem);
       });
-  
+    
       // Update the favorite count
       favoriteCount.textContent = favoriteRecipes.length;
     }

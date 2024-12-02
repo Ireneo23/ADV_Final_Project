@@ -147,6 +147,7 @@
           </div>  
         </div>
   
+  
         <div class="col-md-3">
           <div class="card">
             <img src="img/dinner.png" class="card-img-top" alt="Recipe 2" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Chicken Curry with coconut milk', 'img/dinner.png', ['2-3 tablespoons vegetable oil', '1 medium potato - cut into wedges', '1 medium carrot - cut into wedges', '3 cloves garlic - minced', '1 small onion - chopped', '2 pounds chicken', '2 tablespoons fish sauce', '2 tablespoons curry powder', '1 tablespoon paprika powder (optional)', '½ teaspoon ground black pepper', '1 can (400mL) coconut milk (2 tablespoon powder dissolved in water)', '1 medium green bell pepper - cut into squares', '1 piece fresh chili pepper cut into 4-5 pieces (or dried chili flakes)'], 
@@ -801,7 +802,18 @@
           </div>
         </div>
       </div>  
-   
+      <div class="toast" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000" style="position: absolute; top: 20px; right: 20px;">
+        <div class="toast-header">
+          <strong class="mr-auto">Notification</strong>
+          <small>Just now</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Added to favorites!
+        </div>
+      </div>
 
    
 
@@ -872,8 +884,13 @@
   </div>
 
 
-  
-
+  <script>
+    document.getElementById('liveAlertBtn').addEventListener('click', function() {
+      var toastElement = document.getElementById('liveToast');
+      var toast = new bootstrap.Toast(toastElement);
+      toast.show();
+    });
+  </script>
 
   <!--Script for the modal recipe list-->
   <script>
