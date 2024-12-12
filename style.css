@@ -734,17 +734,29 @@ footer .footer-end a:hover{
 }
 
 
-.about-section .btn-pink, .btn-recipe {
-  background-color: #E96419;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
+.about-section .btn-pink, .btn-recipe, .btn-send {
+  display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #b84706;
 }
 
-.about-section .btn-pink:hover, .btn-recipe:hover {
+
+
+.about-section .btn-pink:hover, .btn-recipe:hover, .btn-send:hover {
   background-color: #b84706;
   color: white;
+  transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
 }
 
 /* Responsive Design */
