@@ -129,7 +129,7 @@
         </div>  
       </div>
   
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/bf1_Pesto_egg.png" class="card-img-top" alt="Recipe 14" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Pesto Eggs', 'img/bf1_Pesto_egg.png', ['2 tablespoons pesto', '2 eggs', 'pinch of kosher salt', 'pinch of ground black pepper', 'pinch of red pepper flakes', '2 pieces sourdough bread', '2 ounces herbed goat\'s cheese'],
           ['Heat a medium frying pan over medium heat. Once hot, spread the pesto in a thin layer across the pan.',
@@ -168,7 +168,7 @@
         </div>
       </div>
   
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/champorado.png" class="card-img-top" alt="Recipe 10" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Champorado', 'img/champorado.png', ['½ cup cocoa powder', '4 cups water', '1 cup glutinous/sticky rice', '½ cup sugar - add more if needed', '12 fluid ounces (1can) evaporated milk'], 
               ['In a pot over high heat, bring 3 cups of water to boil. Add the glutinous rice and let it cook for 5 minutes, stirring from time to time.',
@@ -203,7 +203,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/bf3_Chocolate-Pancakes.png" class="card-img-top" alt="Recipe 15" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Chocolate Pancakes', 'img/bf3_Chocolate-Pancakes.png', ['1 ⅓ cups (185g) all-purpose flour ', '¼ cup (25g) cocoa powder (I use Dutch-processed)', '2 teaspoons baking powder', '¼ teaspoon salt', '2 eggs', '⅓ cup (65g) granulated sugar', '1 cup (240 ml) whole milk', '3 tablespoons canola or vegetable oil (or 45g melted butter)', '1 teaspoon pure vanilla extract', '½ cup (85g) chocolate chips or chunks', 'butter or oil , for cooking', '140 g (5 oz.) bittersweet or semisweet chocolate', '½ cup (120 ml) heavy cream'], 
           ['In a large bowl, sift together flour, cocoa powder, baking powder with a fine mesh strainer, and salt (or whisk well with a whisk). Set aside.',
@@ -241,7 +241,7 @@
       </div>
     </div>
 </div> <!--first row end-->
-
+<div id="thanks-message" class="thanks-message">Thank You for rating!</div>
 
 <!--Dria taman-->
 
@@ -558,7 +558,7 @@
       ingredientsList.appendChild(li);
     });
   
-    const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+    const instructionsList = document.getElementById('recipeInstructions'); 
     instructionsList.innerHTML = '';
     instructions.forEach(instruction => {
       const li = document.createElement('li');
@@ -568,6 +568,25 @@
   }
   </script>
    <!--end Script for the modal-->
+
+   <script>
+    document.querySelectorAll('.star').forEach(star => {
+      star.addEventListener('click', function() {
+        const rating = this.getAttribute('data-rating');
+        const itemId = this.parentElement.getAttribute('data-item');
+        document.getElementById(`rating-${itemId}`).textContent = `Rating: ${rating}`;
+  
+        
+        const thanksMessage = document.getElementById('thanks-message');
+        thanksMessage.style.display = 'block';
+  
+        
+        setTimeout(() => {
+          thanksMessage.style.display = 'none';
+        }, 3000);
+      });
+    });
+  </script>
 
       <script src="main.js"></script>
 

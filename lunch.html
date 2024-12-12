@@ -119,7 +119,7 @@
         </div>  
       </div>
   
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/lunch2_Beef-Short-Rib-Kare-Kare-Recipe-Panlasang-Pinoy.png" class="card-img-top" alt="Recipe 17" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Beef Short Rib Kare Kare', 'img/lunch2_Beef-Short-Rib-Kare-Kare-Recipe-Panlasang-Pinoy.png', ['2 1/2 lbs. beef short rib', '10 pieces snake beans cut into 2 inch length', '1 bunch baby bok choy', '1 1/4 cups ground peanut', '1 medium onion chopped', '3 cloves garlic minced', '1 small banana blossom sliced', '1 tablespoon glutinous rice flour', '3/4 cup annatto water', '1 1/2 cups water', '3 tablespoons cooking oil', '1/2 cup sautéed shrimp paste'],
           ['Heat oil in a pressure cooker.',
@@ -163,7 +163,7 @@
           </div>
         </div>
       </div>
-  <div class="col-md-3">
+  <div class="col-md-3 card-rep">
     <div class="card">
         <img src="img/lunch3_IMG_8988-1024x683.png" class="card-img-top" alt="Recipe 18" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Spicy Korean Chicken Katsu', 'img/lunch3_IMG_8988-1024x683.png', ['1/4 cup soy sauce', '1 TBS rice vinegar substitute with white vinegar-but try to use rice vinegar!', '1/8 cup plus 1 TBS sugar', '1/8 cup honey', '1/8 cup gochujang(korean hot sacue )', '2 cloves garlic, finely minced', '1 tsp fresh ginger, minced subsitute with dried ginger', '2 chicken breasts, sliced in half horizontally(so 4-5 thinner pieces) if you want to use a full package of chicken double the sauce recipe.', '1 cup flour', '1 tsp garlic powder', '1/2 tsp salt', '1/8 tsp black pepper(a pinch)', '2 eggs', '1 cup golden breadcrumbs or japanese panko', '1/4- 1/2 cup oil, for frying'], 
           ['To a medium frying pan, add all sauce ingredients. Make sure the garlic and ginger are very finely minced.',
@@ -201,7 +201,7 @@
       </div>
     </div>
   </div>
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/lunch4_crispy-baked-chicken-wings.png" class="card-img-top" alt="Recipe 19" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Baked Chicken Wings', 'img/lunch4_crispy-baked-chicken-wings.png', ['2 lb. (900g) split chicken wings', '1/2 cup oil', '1 tablespoon garlic powder', '1 tablespoon onion powder', '1 teaspoon paprika', '1/2 teaspoon Cayenne', '1 1/2 teaspoon cumin', '1 teaspoon oregano', '1 teaspoon black pepper', '1/2 teaspoon salt, or to taste', '1 teaspoon instant chicken stock (optional)'], 
           ['To make the baked chicken wings: In a small bow or shallow plate, combine garlic powder, onion powder, paprika, cumin, oregano, Cayenne, pepper, salt, and instant chicken stock.',
@@ -239,7 +239,7 @@
       </div>
     </div>
 </div> <!--first row end-->
-
+<div id="thanks-message" class="thanks-message">Thank You for rating!</div>
 
 <!--Dria taman-->
 <footer class="container-fluid text-lg-start mt-5 justify-content-center bg-white rounded">
@@ -538,7 +538,24 @@
   
   
     
-  
+    <script>
+      document.querySelectorAll('.star').forEach(star => {
+        star.addEventListener('click', function() {
+          const rating = this.getAttribute('data-rating');
+          const itemId = this.parentElement.getAttribute('data-item');
+          document.getElementById(`rating-${itemId}`).textContent = `Rating: ${rating}`;
+    
+          
+          const thanksMessage = document.getElementById('thanks-message');
+          thanksMessage.style.display = 'block';
+    
+          
+          setTimeout(() => {
+            thanksMessage.style.display = 'none';
+          }, 3000);
+        });
+      });
+    </script>
   
     <!--Script for the modal recipe list-->
     <script>
@@ -555,7 +572,7 @@
       ingredientsList.appendChild(li);
     });
   
-    const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+    const instructionsList = document.getElementById('recipeInstructions'); 
     instructionsList.innerHTML = '';
     instructions.forEach(instruction => {
       const li = document.createElement('li');

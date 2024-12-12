@@ -120,7 +120,7 @@
         </div>  
       </div>
   
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/dinner2_Garlic-Parmesan-Chicken-1.png" class="card-img-top" alt="Recipe 21" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Garlic Parmesan Chicken', 'img/dinner2_Garlic-Parmesan-Chicken-1.png', ['Sauce:', '1 ¾ cups chicken broth', '¼ cup heavy cream', '1 teaspoon Worcestershire sauce', '1 teaspoon mustard powder', '1 teaspoon honey', '½ chicken bouillon cube', '½ teaspoon EACH: onion powder, oregano, basil, parsley', 'Chicken/Other:', '2 large boneless skinless chicken breasts', 'Salt/Pepper', '2 teaspoons parsley', '1-2 tablespoons olive oil', '¾ cup dry white wine, see notes', '4 cloves garlic, minced', '3 tablespoons butter', '3 tablespoons flour', '½ cup freshly grated Parmesan cheese', '1 tablespoon fresh lemon juice'],
           ['Combine the sauce ingredients in a large measuring cup with a spout and set aside. Measure out remaining ingredients before beginning.',
@@ -162,7 +162,7 @@
           </div>
         </div>
       </div>
-  <div class="col-md-3">
+  <div class="col-md-3 card-rep">
     <div class="card">
         <img src="img/dinner4_Chicken-Alfredo-Pasta-1.png" class="card-img-top" alt="Recipe 22" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Chicken Alfredo Pasta', 'img/dinner4_Chicken-Alfredo-Pasta-1.png', ['3 tablespoons olive oil', '1 ½ pounds boneless skinless chicken breasts, pounded to an even thickness (4 average-sized breasts)', '1 to 2 teaspoons 21 Salute Seasoning or poultry seasoning', '1 teaspoon kosher salt, or to taste', '1 teaspoon freshly ground black pepper, or to taste', '½ cup white wine* or chicken broth, or as necessary', '3 tablespoons unsalted butter, or more if you want extra sauce', '1 tablespoon garlic, finely minced; or to taste', '2 teaspoons fresh parsley, optional for garnishing'], 
           ['To a large skillet, add the olive oil, pounded chicken, evenly season with 21 Salute, salt, pepper, and cook over medium-high heat for 5 minutes. Do not touch, move, or disturb the chicken while it is searing. After 5 minutes, flip chicken over. It should have a medium golden color. For thicker/bigger chicken breasts, sear for 6-7 minutes.',
@@ -201,7 +201,7 @@
       </div>
     </div>
   </div>
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/dinner5_Oven-Baked-Chicken-Bites-recipe-6.png" class="card-img-top" alt="Recipe 23" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Oven Baked Chicken Bites', 'img/dinner5_Oven-Baked-Chicken-Bites-recipe-6.png', ['1 pound (450g) chicken breasts, skinless and boneless', ' tablespoon olive oil', '1 teaspoon salt', '2 tablespoons unsalted butter, diced', '1/4 teaspoon fresh ground pepper', '1/2 teaspoon paprika', '1/8 teaspoon cayenne pepper', '1/2 teaspoon garlic powder', '1/2 teaspoon onion powder', '1 teaspoon instant chicken stock, optional (lower the salt amount if using)', '1 teaspoon Italian seasoning', 'Fresh chopped parsley, for garnish'], 
           ['To make the oven-baked chicken bites: Preheat your oven to 420°F  (220ºC) conventional. Cut chicken into 1-inch cubes.',
@@ -238,7 +238,7 @@
       </div>
     </div> 
 </div><!--first row end-->
-
+<div id="thanks-message" class="thanks-message">Thank You for rating!</div>
 
 
 
@@ -536,6 +536,25 @@
             </div>
         </div>
     </div>
+
+    <script>
+      document.querySelectorAll('.star').forEach(star => {
+        star.addEventListener('click', function() {
+          const rating = this.getAttribute('data-rating');
+          const itemId = this.parentElement.getAttribute('data-item');
+          document.getElementById(`rating-${itemId}`).textContent = `Rating: ${rating}`;
+    
+          
+          const thanksMessage = document.getElementById('thanks-message');
+          thanksMessage.style.display = 'block';
+    
+          
+          setTimeout(() => {
+            thanksMessage.style.display = 'none';
+          }, 3000);
+        });
+      });
+    </script>
   
     <!--Script for the modal recipe list-->
     <script>
@@ -552,7 +571,7 @@
       ingredientsList.appendChild(li);
     });
   
-    const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+    const instructionsList = document.getElementById('recipeInstructions'); 
     instructionsList.innerHTML = '';
     instructions.forEach(instruction => {
       const li = document.createElement('li');

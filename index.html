@@ -771,6 +771,8 @@
                       </div>
                   </div>
               </div>
+
+              <!--For services-->
               <script>
                 document.addEventListener('DOMContentLoaded', function() {
                   const buttons = document.querySelectorAll('.read-more-btn');
@@ -786,7 +788,7 @@
                         setTimeout(() => {
                           description.style.display = 'none';
                        
-                        }, 200); // Match this with the CSS transition duration
+                        }, 200); 
                       } else {
                         description.style.display = 'block';
                         
@@ -794,7 +796,7 @@
                         setTimeout(() => {
                           description.classList.add('show');
                           
-                        }, 10); // Small delay to ensure display is set before opacity transition
+                        }, 10); 
                       }
                     });
                   });
@@ -813,7 +815,7 @@
                     li.innerText = ingredient;
                     ingredientsList.appendChild(li);
                   });
-                  const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+                  const instructionsList = document.getElementById('recipeInstructions'); 
                   instructionsList.innerHTML = '';
                   instructions.forEach(instruction => {
                     const li = document.createElement('li');

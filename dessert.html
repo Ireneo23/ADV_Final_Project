@@ -120,7 +120,7 @@
         </div>  
       </div>
   
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/dessert_Cheesecake-Crescent-Rolls-Casserole-1.png" class="card-img-top" alt="Recipe 25" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Cheesecake Crescent Rolls Casserole', 'img/dessert_Cheesecake-Crescent-Rolls-Casserole-1.png', ['2 cans of refrigerated crescent roll dough', '2 8 ounce blocks of cream cheese, softened to room temperature', '1 cup of granulated sugar', '1 teaspoon of vanilla extract', '1/4 cup of melted butter', '1 tablespoon of ground cinnamon', '2 tablespoons of granulated sugar'],
           ['Preheat the oven to 350°F (175°C). Grease a 9×13-inch baking dish to ensure the casserole does not stick.',
@@ -161,7 +161,7 @@
           </div>
         </div>
       </div>
-  <div class="col-md-3">
+  <div class="col-md-3 card-rep">
     <div class="card">
         <img src="img/dessert_chocolate-tiramisu-7.png" class="card-img-top" alt="Recipe 26" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Chocolate Tiramisu', 'img/dessert_chocolate-tiramisu-7.png', ['1 cup heavy cream', '7 oz dark chocolate, finely chopped', '4 egg yolks', '1 cup granulated sugar', '1 tbsp rum', '18 oz mascarpone cheese, at room temperature', '2 cups heavy cream', '1 1⁄2 cups strong brewed coffee or espresso, warm', '1 tbsp granulated sugar', '1 tbsp cocoa powder'], 
           ['Make the ganache: Heat the cream in a saucepan until just boiling. Pour over the chopped chocolate in a bowl. Let sit for 5 minutes, then stir until smooth. Set aside to cool slightly.',
@@ -197,7 +197,7 @@
       </div>
     </div>
   </div>
-      <div class="col-md-3">
+      <div class="col-md-3 card-rep">
         <div class="card">
           <img src="img/dessert_filipino-Banana-Cue-sweet-simple-vegan.png" class="card-img-top" alt="Recipe 27" data-bs-toggle="modal" data-bs-target="#recipesModal" onclick="showRecipeDetails('Filipino Banana Cue', 'img/dessert_filipino-Banana-Cue-sweet-simple-vegan.png', ['1 bunch saba bananas (about 7-10; see notes)', '1/2 cup light brown sugar', 'Canola oil'], 
           ['Heat 1 1/2 to 2 inches of oil in a pan or wok on medium-low heat. You don’t want too much oil, just enough to cover about half of the banana. ',
@@ -236,7 +236,7 @@
       </div>
     </div>
 </div> <!--first row end-->
-
+<div id="thanks-message" class="thanks-message">Thank You for rating!</div>
 
 
 <!--Dria taman-->
@@ -553,7 +553,7 @@
       ingredientsList.appendChild(li);
     });
   
-    const instructionsList = document.getElementById('recipeInstructions'); // Changed from 'recipe-instructions' to 'recipeInstructions'
+    const instructionsList = document.getElementById('recipeInstructions'); 
     instructionsList.innerHTML = '';
     instructions.forEach(instruction => {
       const li = document.createElement('li');
@@ -562,6 +562,25 @@
     });
   }
   </script>
+
+<script>
+  document.querySelectorAll('.star').forEach(star => {
+    star.addEventListener('click', function() {
+      const rating = this.getAttribute('data-rating');
+      const itemId = this.parentElement.getAttribute('data-item');
+      document.getElementById(`rating-${itemId}`).textContent = `Rating: ${rating}`;
+
+      
+      const thanksMessage = document.getElementById('thanks-message');
+      thanksMessage.style.display = 'block';
+
+     
+      setTimeout(() => {
+        thanksMessage.style.display = 'none';
+      }, 3000);
+    });
+  });
+</script>
       <script src="main.js"></script>
 
         <script

@@ -122,7 +122,7 @@ body h1, h2{
 }
 
 
-/* Media query for smaller screens for the heart icon */
+
 @media (max-width: 768px) {
  nav .nav-item .nav-icon span {
     right: 12px; 
@@ -135,7 +135,7 @@ body h1, h2{
      bottom: 30px; 
    }
  }
-/* Media query for smaller screens for the heart icon end*/
+
 
 .navbar .food{
     color: #E96419;
@@ -334,7 +334,7 @@ footer .footer-end a:hover{
 }
 
 .btn-outline-danger i {
-  color: #FF7F50; /* Red heart color */
+  color: #FF7F50;
 }
 
 .offcanvas-body {
@@ -343,7 +343,7 @@ footer .footer-end a:hover{
 }
 
 .offcanvas-end {
-  width: 300px; /* Set the width of the offcanvas */
+  width: 300px; 
 }
 
 #favorites-list li:hover {
@@ -357,7 +357,7 @@ footer .footer-end a:hover{
 .social-icon {
   width: 40px;
   height: 40px;
-  object-fit: contain; /* Ensures the image fits within the specified dimensions */
+  object-fit: contain; 
 }
 
 .custom-hr {
@@ -372,20 +372,20 @@ footer .footer-end a:hover{
   margin-bottom: 2rem;
   margin-top: 3rem;
   border: 2px solid #FF7F50;
+  
 }
 
-.card .card-img-top {
-  transition: box-shadow 0.2s ease-in-out;
- 
+.card-rep .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card .card-img-top:hover {
-  box-shadow: 0 4px 8px #181818;
-  opacity: 0.9;   
+.card-rep .card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
-/* css for simultinuous adjustment of the cards*/
+
 .card-title, .card-text {
   white-space: nowrap;
   overflow: hidden;
@@ -394,7 +394,7 @@ footer .footer-end a:hover{
 
 @media (max-width: 768px) {
   .card-title, .card-text {
-      font-size: 1.1rem; /* Adjust the font size for smaller screens */
+      font-size: 1.1rem;
   }
 }
 
@@ -585,9 +585,9 @@ footer .footer-end a:hover{
 
 .custom-container {
   max-width: 700px;
-  margin: 0 auto; /* Center the container horizontally */
-  text-align: center; /* Center text inside the container */
-  padding: 0 15px; /* Add padding to the sides */
+  margin: 0 auto; 
+  text-align: center; 
+  padding: 0 15px; 
 }
 .custom-container h1{
   padding-top: 100px;
@@ -656,9 +656,10 @@ footer .footer-end a:hover{
 
 
 .about-header h1 {
-  font-size: 4rem; /* Make it larger */
-  color: white; /* Orange color */
-  letter-spacing: 2px; /* Add spacing between letters */
+  font-size: 3rem; 
+  color: white;
+  letter-spacing: 2px;
+  z-index: 1; 
 }
 
 .about-header {
@@ -696,6 +697,10 @@ footer .footer-end a:hover{
 .about-section h2 {
   font-family: 'Georgia', serif;
   color: #ff6600;
+}
+.title-page h1{
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .about-section p {
@@ -838,12 +843,12 @@ footer .footer-end a:hover{
 /*media*/
 @media (min-width: 576px) {
   .custom-container {
-      max-width: 540px; /* Adjust width for small devices */
+      max-width: 540px;
   }
 }
 @media screen and (max-width: 768px) {
   .team .team_box .profile {
-    margin: 0 auto; /* Center the profile box horizontally */
+    margin: 0 auto; 
   }
   .bg-dinner {
     height: 50vh;
@@ -854,8 +859,8 @@ footer .footer-end a:hover{
   }
 
   .bg-dinner .btn {
-    bottom: 15px; /* Adjust for smaller screens */
-    right: 15px; /* Adjust for smaller screens */
+    bottom: 15px; 
+    right: 15px; 
   }
   .bg-lunch {
     height: 50vh;
@@ -866,47 +871,63 @@ footer .footer-end a:hover{
   }
 
   .bg-lunch .btn {
-    bottom: 15px; /* Adjust for smaller screens */
-    right: 15px; /* Adjust for smaller screens */
+    bottom: 15px; 
+    right: 15px; 
   }
   .custom-container {
-    max-width: 700px; /* Adjust width for medium devices */
+    max-width: 700px; 
 }
 }
 
 @media (min-width: 992px) {
   .custom-container {
-      max-width: 700px; /* Adjust width for large devices */
+      max-width: 700px;
   }
 }
 
 @media (min-width: 1200px) {
   .custom-container {
-      max-width: 700px; /* Adjust width for extra large devices */
+      max-width: 700px; 
   }
 }
 
 /*services*/
-.service-description{
-  display: none;
+.service-description {
+  max-height: 0;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+
 .service-description.show {
-  display: block;
+  max-height: 500px; 
   opacity: 1;
 }
 
-.read-more-btn{
+.read-more-btn {
   color: white;
   border: none;
   padding: 5px 10px;
   background-color: #E96419;
   border-radius: 4px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.5);
-
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-.read-more-btn:hover{
+.read-more-btn:hover {
   background-color: #FF7F50;
+}
+
+
+.thanks-message {
+  display: none; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000; 
+  text-align: center;
 }
